@@ -145,6 +145,32 @@ body.has-hero .v2-header:not(.scrolled) .has-drop>a::after{color:#e8dff0}
 body.has-hero .v2-header:not(.scrolled) .nav-toggle span{background:#fff}
 body.has-hero .v2-header:not(.scrolled) .nav-cta{background:#fff;color:var(--plum);box-shadow:0 6px 18px rgba(0,0,0,.18)}
 body.has-hero .v2-header:not(.scrolled) .v2-logo{background:rgba(255,255,255,.9);border-radius:10px;padding:2px 6px}
+
+/* ---- scrolled header: inverted PURPLE treatment (Jack request) ----
+   Once past the hero the header becomes solid plum with WHITE nav links and an
+   inverted white Contact button. Applies to every page (has-hero home + the
+   sticky interior pages). Blur + shadow are kept; AA contrast holds
+   (white on #4b2e5a ≈ 8.9:1; plum on white for the button ≈ 8.9:1). */
+.v2-header.scrolled,
+body.has-hero .v2-header.scrolled{
+  background:linear-gradient(180deg,var(--plum) 0%,var(--plum-deep) 100%);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom-color:rgba(255,255,255,.14);
+  box-shadow:0 4px 24px rgba(45,27,56,.30);
+}
+.v2-header.scrolled .v2-nav>ul>li>a{color:#fff}
+.v2-header.scrolled .v2-nav>ul>li>a::before{background:#fff}
+.v2-header.scrolled .v2-nav>ul>li>a:hover{color:#fff}
+.v2-header.scrolled .has-drop>a::after{color:#e8dff0}
+.v2-header.scrolled .nav-toggle span{background:#fff}
+.v2-header.scrolled .v2-logo{background:#fff;border-radius:10px;padding:2px 6px}
+/* Contact button inverts: white ground, plum ink (4 classes + element beats the
+   base .btn-primary and the .v2-nav a.btn-primary colour rule) */
+.v2-header.scrolled .v2-nav a.nav-cta{
+  background:#fff;color:var(--plum);box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+.v2-header.scrolled .v2-nav a.nav-cta:hover{background:var(--cream);color:var(--plum-deep)}
+
 /* hero clears the fixed header */
 body.has-hero .page-hero{padding-top:calc(clamp(2.6rem,5vw,3.9rem) + 62px)}
 html{scroll-padding-top:70px}
@@ -622,6 +648,24 @@ blockquote::before,.quote::before{
   .testi-card:first-child{grid-column:auto}
 }
 
+/* ---------- testimonials: compact 3-up (home + about) ----------
+   Same card language as the standalone testimonials page, laid out as a clean
+   3-across row that stacks on mobile. No full-width lead card here. */
+.testi-3up{grid-template-columns:repeat(3,minmax(0,1fr))}
+.testi-3up .testi-card{padding:clamp(1.7rem,2.6vw,2.3rem) clamp(1.4rem,2.2vw,1.9rem) clamp(1.5rem,2.2vw,2rem)}
+.testi-3up .testi-card .testi-shift{font-size:clamp(1.14rem,1.5vw,1.32rem);max-width:none}
+.testi-3up .testi-card blockquote,.testi-3up .testi-card .testi-quote{
+  font-size:clamp(1.06rem,1.15vw,1.16rem);line-height:1.55;max-width:none;
+}
+/* neutralise the standalone page's full-width / two-column lead-card rules */
+.testi-3up .testi-card:first-child{grid-column:auto}
+@media (min-width:880px){
+  .testi-3up .testi-card:first-child{display:flex;grid-template-columns:none;column-gap:0}
+  .testi-3up .testi-card:first-child .testi-quote{padding-left:0;border-left:none;margin-left:0}
+}
+.testi-more{text-align:center;margin-top:var(--s-6)}
+@media (max-width:900px){.testi-3up{grid-template-columns:1fr}}
+
 /* ---------- marquee word band ---------- */
 .word-band{
   overflow:hidden;background:var(--plum-deep);padding:.62rem 0;
@@ -700,6 +744,51 @@ blockquote::before,.quote::before{
 .cta-panel p{color:#e8dff0;max-width:60ch;margin-left:auto;margin-right:auto;position:relative;z-index:2;font-size:.98rem}
 .cta-panel .btn{margin-top:1.1rem;position:relative;z-index:2}
 
+/* ---------- contact page ---------- */
+.contact-grid{
+  display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(1.6rem,3.4vw,3rem);
+  align-items:start;
+}
+.contact-info>h2{margin-bottom:.4em}
+.contact-info>p{color:var(--ink-soft)}
+.contact-list{list-style:none;margin:1.3rem 0 0;padding:0}
+.contact-list li{
+  display:grid;grid-template-columns:88px 1fr;gap:.9rem;align-items:baseline;
+  padding:.85rem 0;border-top:1px solid var(--line-soft);
+}
+.contact-list li:last-child{border-bottom:1px solid var(--line-soft)}
+.contact-list li>span{
+  font-family:var(--sans);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:700;padding-top:.15em;
+}
+.contact-list a{color:var(--plum);font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--sage)}
+.contact-list a:hover{color:var(--sage-deep);border-color:var(--sage-deep)}
+.contact-list .todo{color:var(--ink-soft);font-style:italic}
+.contact-form-wrap{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-soft);padding:clamp(1.5rem,2.8vw,2.4rem);
+}
+.contact-form .field{margin-bottom:1.05rem}
+.contact-form label{
+  display:block;font-family:var(--sans);font-size:.82rem;font-weight:600;
+  color:var(--plum-deep);margin-bottom:.4rem;letter-spacing:.01em;
+}
+.contact-form label .opt{color:var(--ink-soft);font-weight:400;letter-spacing:0}
+.contact-form input,.contact-form textarea{
+  width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);
+  background:var(--cream);border:1.5px solid var(--line);border-radius:var(--r-sm);
+  padding:.72rem .9rem;transition:border-color .25s,box-shadow .25s,background .25s;
+}
+.contact-form textarea{resize:vertical;min-height:130px;line-height:1.55}
+.contact-form input:focus,.contact-form textarea:focus{
+  outline:none;border-color:var(--sage-deep);background:#fff;
+  box-shadow:0 0 0 3px rgba(95,129,85,.15);
+}
+.contact-form .btn-primary{margin-top:.3rem;width:100%;text-align:center;cursor:pointer;border:none}
+@media (max-width:820px){
+  .contact-grid{grid-template-columns:1fr;gap:1.8rem}
+}
+
 /* ---------- footer ---------- */
 .v2-footer{background:var(--plum-ink);color:#cfc3d9;padding:2.6rem var(--gutter) 1.2rem}
 .v2-footer .inner{max-width:var(--wrap);margin:0 auto}
@@ -776,6 +865,13 @@ blockquote::before,.quote::before{
   }
   .has-drop.open .dropdown{display:block}
   .nav-toggle{display:block}
+  /* the mobile nav is a cream slide-in panel: keep its links dark (plum) in
+     every header state so the scrolled white-link treatment never washes out */
+  .v2-header.scrolled .v2-nav>ul>li>a,
+  body.has-hero .v2-header:not(.scrolled) .v2-nav>ul>li>a{color:var(--plum);text-shadow:none}
+  .v2-header.scrolled .has-drop>a::after,
+  body.has-hero .v2-header:not(.scrolled) .has-drop>a::after{color:var(--sage-deep)}
+  .v2-header.scrolled .v2-nav a.nav-cta{background:var(--plum);color:#fff}
 }
 @media (max-width:640px){
   :root{--fs-body:16px}
