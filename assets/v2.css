@@ -797,6 +797,9 @@ blockquote::before,.quote::before{
 .contact-hero h1{font-size:clamp(1.65rem,2.8vw,2.35rem);margin-bottom:.45rem}
 .contact-hero .lede{font-size:clamp(.93rem,1.1vw,1.02rem);line-height:1.48;margin:0 auto .45rem;max-width:58ch}
 .contact-hero .lede:last-child{margin-bottom:0}
+/* contact page now leads directly with the Get in Touch block (no hero) */
+.contact-top{padding-top:calc(62px + clamp(1.2rem,3vw,2.4rem))}
+.contact-h1{font-size:clamp(1.9rem,3vw,2.6rem);margin-bottom:.2em}
 .contact-form textarea{resize:vertical;min-height:130px;line-height:1.55}
 .contact-form input:focus,.contact-form textarea:focus{
   outline:none;border-color:var(--sage-deep);background:#fff;
@@ -1145,7 +1148,7 @@ blockquote::before,.quote::before{
   border-radius:20px;
   padding:clamp(2rem,3.4vw,3.1rem) clamp(1.7rem,3vw,2.9rem) clamp(1.7rem,3vw,2.5rem);
   box-shadow:0 1px 0 rgba(75,46,90,.05), 0 18px 40px -26px rgba(45,27,56,.42);
-  overflow:visible;
+  overflow:hidden;
   transition:transform .35s var(--ease), box-shadow .35s var(--ease),
              border-color .35s var(--ease);
 }
@@ -1156,22 +1159,17 @@ blockquote::before,.quote::before{
 }
 /* accent bar across the top edge, always on, so the cards are clearly separated */
 .testi-card::after{
-  content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:5px;
-  border-radius:20px 20px 0 0;
+  content:"";position:absolute;left:0;right:0;top:0;height:5px;
   background:linear-gradient(90deg, var(--sage-deep) 0%, var(--lilac) 78%, var(--lilac-soft) 100%);
 }
-/* the quote mark becomes a deliberate mark set into the top edge, not a
-   giant washed-out glyph floating in the corner */
+/* the quote mark is a soft serif glyph tucked inside the top corner, fully
+   contained by the card (overflow:hidden), never floating above it */
 .testi-card::before{
   content:"\201C";
-  position:absolute;top:-24px;left:clamp(1.7rem,3vw,2.9rem);right:auto;
-  box-sizing:border-box;
-  width:54px;height:54px;display:flex;align-items:flex-start;justify-content:center;
-  border-radius:50%;overflow:hidden;
-  background:var(--plum);color:var(--lilac-soft);
-  font-family:var(--serif);font-size:2.9rem;line-height:.86;opacity:1;
-  padding-top:9px;
-  box-shadow:0 8px 18px -10px rgba(45,27,56,.7);
+  position:absolute;top:.4rem;right:clamp(1.2rem,2.4vw,1.8rem);left:auto;
+  width:auto;height:auto;border-radius:0;background:none;box-shadow:none;padding:0;
+  color:var(--lilac);opacity:.34;
+  font-family:var(--serif);font-size:5rem;line-height:1;
 }
 .testi-card .testi-cat{
   display:inline-block;align-self:flex-start;
@@ -1215,7 +1213,7 @@ blockquote::before,.quote::before{
   }
 }
 @media (max-width:720px){
-  .testi-card::before{width:46px;height:46px;font-size:2.5rem;top:-21px;padding-top:7px}
+  .testi-card::before{font-size:4rem;top:.3rem;right:1rem}
 }
 @media (prefers-reduced-motion:reduce){
   .testi-card{transition:none}
