@@ -1,0 +1,1193 @@
+/* Renewal Health v2 design system
+   Palette drawn from the brand logo: deep plum, sage green, soft lilac, warm cream.
+   v2.1 polish pass: real spacing scale, fluid type scale, denser layout, refined cards. */
+:root{
+  /* ---- colour ---- */
+  --plum:#4b2e5a;
+  --plum-deep:#372145;
+  --plum-ink:#2d1b38;
+  --lilac:#b79cc9;
+  --lilac-soft:#e9e1f0;
+  --sage:#8fae85;
+  --sage-deep:#5f8155;
+  --sage-tint:#eef3ea;
+  --cream:#faf7f2;
+  --cream-deep:#f3ede4;
+  --white:#ffffff;
+  --ink:#3a3141;
+  --ink-soft:#5f5568;
+  --gold:#c9a24b;
+  --line:rgba(75,46,90,.10);
+  --line-soft:rgba(75,46,90,.06);
+
+  /* ---- type ---- */
+  --serif:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --fs-body:16.5px;
+  --lh-body:1.68;
+  --measure:68ch;
+
+  /* ---- spacing scale (8px base) ---- */
+  --s-1:.25rem;  /* 4  */
+  --s-2:.5rem;   /* 8  */
+  --s-3:.75rem;  /* 12 */
+  --s-4:1rem;    /* 16 */
+  --s-5:1.5rem;  /* 24 */
+  --s-6:2rem;    /* 32 */
+  --s-7:2.5rem;  /* 40 */
+  --s-8:3rem;    /* 48 */
+  --s-9:4rem;    /* 64 */
+  --s-10:5rem;   /* 80 */
+  --gutter:clamp(1.1rem,3vw,1.6rem);
+  --section-y:clamp(2.75rem,4.6vw,4rem);
+  --wrap:1180px;
+
+  /* ---- surface ---- */
+  --shadow-soft:0 18px 46px rgba(75,46,90,.10);
+  --shadow-card:0 6px 22px rgba(75,46,90,.07);
+  --shadow-lift:0 18px 42px rgba(75,46,90,.15);
+  --r-xs:8px;
+  --r-sm:12px;
+  --r-md:16px;
+  --r-lg:22px;
+  --radius:16px; /* legacy alias */
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--cream);
+  line-height:var(--lh-body);
+  font-size:var(--fs-body);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--plum)}
+:focus-visible{outline:2.5px solid var(--sage-deep);outline-offset:3px;border-radius:4px}
+::selection{background:var(--lilac-soft);color:var(--plum-ink)}
+
+/* ---------- typography ---------- */
+h1,h2,h3,.serif{
+  font-family:var(--serif);color:var(--plum);font-weight:600;
+  line-height:1.12;letter-spacing:-.012em;text-wrap:balance;
+}
+h1{font-size:clamp(2.15rem,4.4vw,3.35rem)}
+h2{font-size:clamp(1.6rem,2.6vw,2.15rem);margin-bottom:.5em;max-width:22ch}
+h2.wide,.section-center h2,.cta-panel h2,.page-hero h1,.split h2,.flow h2{max-width:none}
+h3{font-size:clamp(1.15rem,1.7vw,1.38rem);margin-bottom:.4em;line-height:1.2}
+h4{font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--plum);margin-bottom:.3em;letter-spacing:.005em;line-height:1.35}
+p{margin-bottom:.85em;color:var(--ink);max-width:var(--measure);
+  /* stop a single short word from being stranded alone on the last line */
+  text-wrap:pretty}
+li,blockquote,figcaption{text-wrap:pretty}
+p:last-child{margin-bottom:0}
+strong{color:var(--plum-deep);font-weight:600}
+em{color:var(--ink-soft)}
+/* keep emphasis readable on the dark plum surfaces */
+.bg-plum em,.bg-plum strong,.cta-panel em,.cta-panel strong,
+.page-hero em,.page-hero strong,.home-hero em,.home-hero strong,
+.v2-footer em,.v2-footer strong{color:inherit}
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:700;margin-bottom:.65rem;
+  display:inline-flex;align-items:center;gap:.55rem;line-height:1;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--sage);display:inline-block;flex:none}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-block;font-family:var(--sans);font-weight:600;font-size:.92rem;
+  line-height:1.2;padding:.78rem 1.6rem;border-radius:999px;text-decoration:none;
+  letter-spacing:.005em;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,color .3s,border-color .3s;
+}
+.btn-primary{background:var(--plum);color:#fff;box-shadow:0 6px 18px rgba(75,46,90,.22)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(75,46,90,.3);background:var(--plum-deep)}
+.btn-ghost{border:1.5px solid var(--plum);color:var(--plum);background:transparent}
+.btn-ghost:hover{background:var(--plum);color:#fff;transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--plum);box-shadow:0 6px 18px rgba(0,0,0,.14)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.text-link{
+  font-weight:600;text-decoration:none;font-size:.9rem;
+  border-bottom:1.5px solid var(--sage);padding-bottom:2px;
+  transition:border-color .25s,color .25s;
+}
+.text-link:hover{color:var(--sage-deep);border-color:var(--sage-deep)}
+
+/* ---------- header ---------- */
+.v2-header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,247,242,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft);
+  transition:box-shadow .3s,background .3s;
+}
+.v2-header.scrolled{box-shadow:0 4px 24px rgba(75,46,90,.08);background:rgba(250,247,242,.96)}
+
+/* ---- immersive over-hero header: the hero sits behind a transparent header,
+   which turns to the solid frosted style once the user scrolls past the hero ---- */
+body.has-hero .v2-header{
+  position:fixed;left:0;right:0;top:0;
+  background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;
+  border-bottom-color:transparent;box-shadow:none;
+}
+body.has-hero .v2-header.scrolled{
+  background:rgba(250,247,242,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom-color:var(--line-soft);box-shadow:0 4px 24px rgba(75,46,90,.08);
+}
+/* light nav treatment while overlaying the hero image */
+body.has-hero .v2-header:not(.scrolled) .v2-nav>ul>li>a{color:#fff;text-shadow:0 1px 12px rgba(45,27,56,.45)}
+body.has-hero .v2-header:not(.scrolled) .v2-nav>ul>li>a::before{background:#fff}
+body.has-hero .v2-header:not(.scrolled) .has-drop>a::after{color:#e8dff0}
+body.has-hero .v2-header:not(.scrolled) .nav-toggle span{background:#fff}
+body.has-hero .v2-header:not(.scrolled) .nav-cta{background:#fff;color:var(--plum);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+body.has-hero .v2-header:not(.scrolled) .v2-logo{background:rgba(255,255,255,.9);border-radius:10px;padding:2px 6px}
+/* hero clears the fixed header */
+body.has-hero .page-hero{padding-top:calc(clamp(2.6rem,5vw,3.9rem) + 62px)}
+html{scroll-padding-top:70px}
+.v2-header .bar{
+  max-width:var(--wrap);margin:0 auto;padding:.45rem var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.v2-logo img{height:46px;width:auto}
+.v2-nav{display:flex;align-items:center;gap:1.25rem}
+.v2-nav>ul{display:flex;list-style:none;gap:1.25rem;align-items:center}
+.v2-nav a{font-size:.89rem;font-weight:500;text-decoration:none;color:var(--ink)}
+.v2-nav>ul>li>a{position:relative;padding-bottom:2px}
+.v2-nav>ul>li>a::before{
+  content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;
+  background:var(--sage-deep);transform:scaleX(0);transform-origin:left;
+  transition:transform .3s var(--ease);
+}
+.v2-nav>ul>li>a:hover{color:var(--sage-deep)}
+.v2-nav>ul>li>a:hover::before{transform:scaleX(1)}
+.v2-nav li{position:relative}
+.has-drop>a::after{content:"▾";font-size:.62em;margin-left:.3em;color:var(--sage-deep)}
+.dropdown{
+  position:absolute;top:calc(100% + 12px);left:50%;transform:translate(-50%,8px);
+  background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-soft);
+  border:1px solid var(--line-soft);
+  padding:.45rem;min-width:280px;list-style:none;
+  opacity:0;visibility:hidden;transition:opacity .25s var(--ease),transform .25s var(--ease),visibility .25s;
+}
+.has-drop:hover .dropdown,.has-drop:focus-within .dropdown{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.dropdown::before{content:"";position:absolute;top:-12px;left:0;right:0;height:12px}
+.dropdown a{display:block;padding:.45rem .8rem;border-radius:var(--r-xs);font-size:.87rem;line-height:1.35}
+.dropdown a:hover{background:var(--sage-tint);color:var(--plum)}
+.dropdown li>a::before{display:none}
+.nav-cta{margin-left:.2rem;padding:.6rem 1.25rem;font-size:.86rem}
+.v2-nav a.btn-primary{color:#fff}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:.4rem}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--plum);margin:5px 0;transition:.3s var(--ease)}
+
+/* ---------- page hero (interior) ---------- */
+.page-hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--plum) 55%,#5f4472 100%);
+  color:#fff;padding:clamp(2.6rem,5vw,3.9rem) var(--gutter);text-align:center;
+  /* every page hero occupies the same band, whatever the length of its H1, so
+     the pages read as one set instead of 248px on one page and 414px on another */
+  min-height:clamp(300px,30vw,420px);
+  display:flex;flex-direction:column;justify-content:center;
+}
+.page-hero .inner{max-width:900px;margin:0 auto;position:relative;z-index:2;width:100%}
+.page-hero h1{color:#fff;max-width:20ch;margin:0 auto;font-size:clamp(1.95rem,4vw,3rem)}
+/* a linked hero heading was inheriting the plum link colour and an underline,
+   which read as dark purple on dark purple */
+.page-hero h1 a{color:inherit;text-decoration:none;border-bottom:1px solid transparent}
+.page-hero h1 a:hover,.page-hero h1 a:focus-visible{border-bottom-color:rgba(255,255,255,.6)}
+.page-hero .lede{max-width:62ch;margin:.9rem auto 0;color:#e8dff0;font-size:1.02rem}
+.page-hero p{margin-left:auto;margin-right:auto}
+.page-hero .eyebrow{color:var(--lilac);justify-content:center}
+.page-hero .eyebrow::before{background:var(--lilac)}
+.hero-dragonfly{
+  position:absolute;opacity:.15;pointer-events:none;
+  animation:df-drift 16s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes df-drift{
+  0%{transform:translate(0,0) rotate(-6deg)}
+  50%{transform:translate(22px,-16px) rotate(3deg)}
+  100%{transform:translate(-12px,8px) rotate(-3deg)}
+}
+.wing{transform-origin:center;animation:df-flutter 1.9s ease-in-out infinite alternate}
+.wing.w2{animation-delay:.22s}
+@keyframes df-flutter{from{transform:scaleY(1)}to{transform:scaleY(.86)}}
+
+/* ---------- interior hero variants (layout variety) ----------
+   A small vocabulary of distinct hero treatments distributed across pages so
+   pages do not all lead with the same look. */
+.page-hero .eyebrow-line{
+  display:block;width:54px;height:2px;background:var(--lilac);margin:0 auto 1.1rem;opacity:.8;
+}
+/* left-aligned editorial hero */
+.page-hero.ph-left{text-align:left}
+/* margin:0 auto, not margin:0: the left-aligned heroes must start on the same
+   column as the header logo and the footer, not hard against the viewport edge */
+.page-hero.ph-left .inner{margin:0 auto;max-width:var(--wrap)}
+.page-hero.ph-left h1{margin:0;max-width:18ch}
+.page-hero.ph-left .lede{margin-left:0;margin-right:0}
+.page-hero.ph-left .eyebrow-line{margin-left:0}
+/* quiet, softer statement hero: lighter veil, thin rule, roomy */
+.page-hero.ph-quiet{
+  background:linear-gradient(135deg,#5a3a6d 0%,#6f4a83 60%,#7d5892 100%);
+}
+.page-hero.ph-quiet h1{font-weight:500;letter-spacing:.005em}
+/* banded hero with a lilac side accent */
+.page-hero.ph-band{text-align:left;border-left:5px solid var(--lilac)}
+.page-hero.ph-band .inner{margin:0 auto;max-width:var(--wrap)}
+.page-hero.ph-band h1{margin:0;max-width:20ch}
+.page-hero.ph-band .lede{margin-left:0;margin-right:0}
+.page-hero.ph-band .eyebrow-line{margin-left:0}
+
+/* ---------- article lead-figure treatments (variety per page) ---------- */
+/* wide cinematic band. Every in-article LEAD figure is 16/7 whichever variant
+   the page uses, so the role has one ratio site-wide (the av-offset float is a
+   different role: a side image beside the opening prose, 4/3). */
+.article.av-band .flow>figure:first-child img{aspect-ratio:16/7}
+/* framed / bordered panel lead */
+.article.av-panel .flow>figure:first-child{
+  padding:.7rem;background:#fff;border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);box-shadow:var(--shadow-card);position:relative;
+}
+.article.av-panel .flow>figure:first-child img{aspect-ratio:16/7;border-radius:var(--r-md);box-shadow:none}
+/* offset lead: the image used to float to one side so the opening prose could
+   wrap beside it. On all three pages that carry this variant the lead figure is
+   followed by an eyebrow, an H2 and a card grid rather than by prose, so nothing
+   wrapped and the float left a dead gutter beside a small image. The lead is now
+   the same 16/7 band every other page uses, which is also what "one ratio per
+   role" asks for. Page-to-page variety still comes from the hero treatments and
+   the alternating article backgrounds. */
+.article.av-offset .flow>figure:first-child img{aspect-ratio:16/7}
+/* alternate article background so not every page is the same cream */
+.article.art-white{background:var(--white)}
+.article.art-white+.bg-cream{padding-top:var(--section-y)}
+
+/* ---------- Lynette portrait: content left, photo right, full face ---------- */
+.bio-block{
+  display:grid;grid-template-columns:1.35fr .9fr;gap:clamp(1.8rem,3.5vw,3rem);
+  align-items:start;margin:.4rem 0 1.6rem;
+}
+.bio-block .bio-copy>*:first-child{margin-top:0}
+.bio-portrait{position:relative}
+.bio-portrait img{
+  width:100%;max-width:360px;margin-left:auto;
+  aspect-ratio:599/757;object-fit:contain;object-position:top center;
+  background:var(--cream-deep);
+  border-radius:var(--r-lg);box-shadow:var(--shadow-soft);
+}
+.bio-portrait::after{
+  content:"";position:absolute;inset:-12px -12px 12px 12px;z-index:-1;
+  border-radius:var(--r-lg);border:1.5px solid var(--sage);opacity:.4;max-width:360px;margin-left:auto;
+}
+@media (max-width:760px){
+  .bio-block{grid-template-columns:1fr;gap:1.4rem}
+  .bio-portrait{order:-1}
+  .bio-portrait img{max-width:280px;margin:0 auto}
+}
+
+/* ---------- dropdown divider for the consolidated Programs entry ---------- */
+.dropdown li.drop-sep{margin-top:.35rem;padding-top:.4rem;border-top:1px solid var(--line-soft)}
+.dropdown li.drop-sep>a{color:var(--plum);font-weight:600}
+
+/* ---------- dragonfly flight entrance (home) ----------
+   The page opens behind a SOLID blue-violet curtain, keyed to the dominant
+   colour of the hero photograph so the curtain and the revealed hero read as
+   one world. A large naturalistic dragonfly flies the full diagonal from the
+   bottom-left corner to the top-right corner and the curtain is wiped away
+   along that diagonal, opening the entire viewport. Both nodes are removed by
+   v2.js on animationend, so nothing lingers over the page while scrolling.
+   Total entrance: 0.10s delay + 1.65s flight = 1.75s.
+   Hero content is fully settled at 0.96s, well inside the flight.
+
+   Curtain colour derivation: the hero photo
+   (pexels-depthofraw-10722719.jpg) was sampled with Pillow. Its dominant
+   colour is #032644, a deep blue at hue 208. That hue was blended 35% into
+   brand plum-ink #2d1b38 (hue 277) and lifted 6 points of lightness, giving
+   the blue-violet base #291e52 (hue 253, L .22 against plum-ink's L .16). */
+/* Two full-viewport triangles tile the screen exactly (seam = the bottom-left ->
+   top-right diagonal the dragonfly flies). No rotation, no gaps: at rest the
+   screen is 100% covered. They slide apart perpendicular to the seam in ONE
+   motion, timed to the fly, like a zipper pulled corner to corner. The purple
+   is layered, not flat: lilac glow blooms + faint sparkles over a blue-violet
+   gradient pulled toward the hero photo's own tones. */
+.hero-curtain{
+  position:fixed;inset:0;z-index:120;pointer-events:none;
+  background:
+    radial-gradient(52% 44% at 24% 26%,rgba(150,126,214,.32),rgba(150,126,214,0) 70%),
+    radial-gradient(46% 40% at 74% 68%,rgba(96,120,205,.28),rgba(96,120,205,0) 72%),
+    radial-gradient(1.6px 1.6px at 18% 62%,rgba(255,255,255,.5),transparent 55%),
+    radial-gradient(1.4px 1.4px at 41% 23%,rgba(255,255,255,.4),transparent 55%),
+    radial-gradient(1.8px 1.8px at 63% 79%,rgba(255,255,255,.42),transparent 55%),
+    radial-gradient(1.3px 1.3px at 82% 38%,rgba(255,255,255,.38),transparent 55%),
+    radial-gradient(1.5px 1.5px at 92% 12%,rgba(255,255,255,.35),transparent 55%),
+    linear-gradient(152deg,#3c336e 0%,#2f2f63 34%,#272a56 62%,#20264a 100%);
+  will-change:transform;
+}
+.hero-curtain.hc-top{clip-path:polygon(-2% -2%,102% -2%,102% 1%,1% 102%,-2% 102%);
+  animation:part-top 4s cubic-bezier(.46,.02,.24,1) .05s forwards}
+.hero-curtain.hc-bot{clip-path:polygon(102% -1%,102% 102%,-1% 102%);
+  animation:part-bot 4s cubic-bezier(.46,.02,.24,1) .05s forwards}
+@keyframes part-top{
+  0%{transform:translate3d(0,0,0)}
+  30%{transform:translate3d(-7%,-5%,0)}
+  100%{transform:translate3d(-112%,-80%,0)}
+}
+@keyframes part-bot{
+  0%{transform:translate3d(0,0,0)}
+  30%{transform:translate3d(7%,5%,0)}
+  100%{transform:translate3d(112%,80%,0)}
+}
+/* the dragonfly rides exactly on the parting seam, bottom-left -> top-right */
+.df-reveal{
+  position:fixed;z-index:125;pointer-events:none;
+  left:-20%;top:96%;
+  width:min(30vw,360px);height:auto;
+  animation:df-cross 4s cubic-bezier(.46,.02,.24,1) .05s forwards;
+  filter:drop-shadow(0 10px 30px rgba(24,12,50,.55));
+  will-change:left,top,transform;
+}
+@keyframes df-cross{
+  0%{left:-20%;top:96%;transform:rotate(-27deg) scale(.88)}
+  100%{left:106%;top:-14%;transform:rotate(-25deg) scale(1.05)}
+}
+.df-reveal .df{width:100%;height:auto;overflow:visible}
+/* alive: wings FLAP up and down from where they join the thorax, rather than
+   sweeping backwards around a shared centre (which read like windshield wipers).
+   The motion is mostly vertical compression toward the wing root, with only a
+   couple of degrees of rotation, so each stroke looks like a real wingbeat.
+   The two wings of a pair move together; the rear pair counter-strokes on a
+   half-cycle offset, the way a dragonfly actually beats. */
+.df-reveal .dfwing.ft{transform-origin:56.5% 40.8%}
+.df-reveal .dfwing.fb{transform-origin:56.5% 49.2%}
+.df-reveal .dfwing.rt{transform-origin:51% 40.8%}
+.df-reveal .dfwing.rb{transform-origin:51% 49.2%}
+.df-reveal .dfwing.ft,
+.df-reveal .dfwing.fb{animation:df-flap .22s ease-in-out infinite alternate}
+.df-reveal .dfwing.rt,
+.df-reveal .dfwing.rb{animation:df-flap .22s ease-in-out .11s infinite alternate}
+@keyframes df-flap{
+  from{transform:scaleY(1.04) rotate(-1.5deg)}
+  to  {transform:scaleY(.34)  rotate(2.5deg)}
+}
+.df-reveal .df-bodyg{animation:df-undulate 2s ease-in-out infinite alternate;transform-origin:50% 50%}
+@keyframes df-undulate{from{transform:rotate(.8deg)}to{transform:rotate(-1.4deg)}}
+.df-reveal .df-shimmer{animation:df-shim 1.6s linear infinite}
+@keyframes df-shim{0%{opacity:.25}50%{opacity:.7}100%{opacity:.25}}
+
+/* deterministic freeze for QA capture: html.df-freeze holds it mid-flight */
+html.df-freeze .hero-curtain,
+html.df-freeze .df-reveal{animation-delay:-.75s;animation-play-state:paused}
+html.df-freeze .df-reveal .dfwing,
+html.df-freeze .df-reveal .df-bodyg,
+html.df-freeze .df-reveal .df-shimmer{animation-play-state:paused}
+
+.home-hero.opened .home-hero-content{animation:hero-open .62s var(--ease) .34s both}
+@keyframes hero-open{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  /* skip straight to the finished hero: the .opened rule above out-specifies a
+     plain .home-hero selector, so this has to win explicitly */
+  .home-hero .home-hero-content,
+  .home-hero.opened .home-hero-content{
+    animation:none !important;opacity:1 !important;transform:none !important;
+  }
+  /* skip the entrance entirely: no curtain, no dragonfly */
+  .hero-curtain,.df-reveal{display:none !important;animation:none !important}
+}
+
+/* ---------- photo-backed interior hero (site-wide hero variety) ----------
+   Each page carries a distinct calming photo behind the plum veil, so the
+   same image is never the hero across pages. */
+.page-hero.has-photo{background:var(--plum-deep)}
+.page-hero .ph-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+/* rendered 1:1 inside the band: the old scale(1.03) pushed the image past the
+   viewport edge for no visual gain */
+.page-hero .ph-bg img{width:100%;height:100%;object-fit:cover}
+.page-hero .ph-veil{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(150deg,rgba(45,27,56,.9) 0%,rgba(75,46,90,.72) 50%,rgba(45,27,56,.88) 100%)}
+.page-hero.has-photo .inner{z-index:2}
+.page-hero.has-photo.ph-band{border-left-color:var(--lilac)}
+
+/* ---------- sections ---------- */
+.section{padding:var(--section-y) var(--gutter);position:relative}
+.section .inner{max-width:var(--wrap);margin:0 auto}
+.section .narrow{max-width:790px;margin:0 auto}
+.bg-cream{background:var(--cream)}
+.bg-white{background:var(--white)}
+.bg-sage{background:var(--sage-tint)}
+.bg-lilac{background:var(--lilac-soft)}
+.bg-plum{background:linear-gradient(135deg,var(--plum-deep),var(--plum));color:#fff}
+.bg-plum h2,.bg-plum h3{color:#fff}
+.bg-plum p{color:#e8dff0}
+.section-center{text-align:center}
+.section-center .eyebrow{justify-content:center}
+.section-center p{margin-left:auto;margin-right:auto}
+/* collapse the seam when two same-coloured bands stack */
+.bg-cream+.bg-cream,.bg-white+.bg-white,.bg-sage+.bg-sage,.bg-lilac+.bg-lilac{padding-top:0}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,3.4vw,3rem);align-items:center}
+.split.rev>.media{order:2}
+.split>div>p{max-width:56ch}
+
+.media-frame{position:relative}
+.media-frame img{
+  border-radius:var(--r-lg);box-shadow:var(--shadow-soft);
+  aspect-ratio:4/3;object-fit:cover;width:100%;
+}
+.media-frame::after{
+  content:"";position:absolute;inset:-12px 12px 12px -12px;z-index:-1;
+  border-radius:var(--r-lg);border:1.5px solid var(--sage);opacity:.45;
+}
+
+/* ---------- cards ----------
+   The seven services are an odd count, and a flex grid left three cards
+   floating short of the right edge (and a single orphan card at 1024/768).
+   The grid is now sized so EVERY row is filled edge to edge at every
+   breakpoint: 4 + 3 on desktop, 3 + 2 + 2 on tablet, 1-up on mobile.
+   grid-auto-rows:1fr keeps every card exactly the same height. */
+.card-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:1fr;
+  gap:var(--s-4);margin-top:var(--s-6);
+}
+.card-grid>*{grid-column:span 3}
+.card-grid>*:nth-child(n+5){grid-column:span 4}
+.card{
+  background:#fff;border-radius:var(--r-md);padding:1.35rem 1.3rem 1.25rem;
+  box-shadow:var(--shadow-card);border:1px solid var(--line-soft);
+  display:flex;flex-direction:column;gap:.15rem;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift);border-color:rgba(143,174,133,.5)}
+.card .card-icon{width:32px;height:32px;margin-bottom:.6rem;color:var(--sage-deep);flex:none}
+.card h3{font-size:1.16rem;margin-bottom:.3em}
+.card p{flex:1;color:var(--ink-soft);font-size:.9rem;line-height:1.55;margin-bottom:.85rem;max-width:none}
+.card .text-link{align-self:flex-start;font-size:.85rem}
+
+/* ---------- steps ---------- */
+.steps{
+  display:grid;gap:var(--s-4);grid-auto-rows:1fr;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  margin-top:var(--s-6);
+}
+.step{
+  background:#fff;border-radius:var(--r-md);padding:1.3rem 1.25rem;
+  box-shadow:var(--shadow-card);border:1px solid var(--line-soft);
+  position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.step::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--sage),var(--lilac));
+  transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease);
+}
+.step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift)}
+.step:hover::before{transform:scaleX(1)}
+.step .step-num{
+  font-family:var(--serif);font-size:1.85rem;color:var(--lilac);
+  line-height:1;margin-bottom:.35rem;font-weight:600;
+}
+.step h4{font-size:1rem}
+.step p{font-size:.885rem;line-height:1.55;color:var(--ink-soft);max-width:none}
+
+/* ---------- checklist ---------- */
+.check-card{
+  background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-soft);
+  border:1px solid var(--line-soft);
+  padding:1.7rem 1.65rem;
+}
+.check-card h3{font-size:1.12rem}
+.check-card ul,ul.checks{list-style:none;margin:.7rem 0 .9rem 0 !important;padding-left:0}
+.check-card li,ul.checks li{
+  padding:.32rem 0 .32rem 1.9rem;position:relative;color:var(--ink);
+  font-size:.95rem;line-height:1.5;
+}
+.check-card li::before,ul.checks li::before{
+  content:"";position:absolute;left:0;top:.62em;width:16px;height:16px;
+  background:var(--sage-tint);border:1.5px solid var(--sage);border-radius:50%;
+}
+.check-card li::after,ul.checks li::after{
+  content:"";position:absolute;left:4.5px;top:calc(.62em + 4px);width:7px;height:4px;
+  border-left:2px solid var(--sage-deep);border-bottom:2px solid var(--sage-deep);transform:rotate(-45deg);
+}
+
+/* ---------- quotes / testimonials ---------- */
+blockquote,.quote{
+  background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-card);
+  border:1px solid var(--line-soft);border-left:3px solid var(--lilac);
+  padding:1.4rem 1.5rem 1.4rem 3.1rem;margin:1rem 0;position:relative;
+  font-size:.98rem;line-height:1.62;max-width:none;
+}
+blockquote::before,.quote::before{
+  content:"\201C";font-family:var(--serif);font-size:3rem;color:var(--lilac);
+  position:absolute;top:.28rem;left:1rem;line-height:1;opacity:.55;
+}
+
+/* ---------- generic content flow ---------- */
+.flow>*{max-width:none}
+.flow h2{margin-top:1.3em;padding-top:.15em}
+.flow h2:first-child{margin-top:0}
+.flow h3{margin-top:1.05em;color:var(--plum-deep)}
+.flow h3:first-child{margin-top:0}
+.flow h4{margin-top:.85em}
+.flow p{max-width:none;margin-bottom:.7em}
+.flow ul,.flow ol{margin:0 0 .85em 1.25em}
+.flow ul.checks{margin-left:0}
+.flow li{margin-bottom:.18em}
+.flow figure{margin:1.3rem 0}
+/* .flow>* sets max-width:none so text blocks can span the column, but that also
+   unconstrained any media placed directly in a flow: a 1600px image then blew
+   past the viewport. Media must always be held to the column width. */
+.flow img,.flow svg,.flow video{max-width:100%;height:auto}
+.flow figure img{border-radius:var(--r-lg);box-shadow:var(--shadow-soft);width:100%}
+/* an image dropped straight into a flow gets the same editorial treatment as a
+   figure-wrapped one, so in-article images all read the same */
+.article .flow>img{
+  width:100%;margin:1.3rem 0;border-radius:var(--r-lg);box-shadow:var(--shadow-soft);
+  aspect-ratio:16/8;object-fit:cover;
+}
+/* in-article images read as editorial bands rather than full-height slabs */
+.article .flow figure img{aspect-ratio:16/8;object-fit:cover}
+.flow>figure:first-child img{aspect-ratio:16/7;object-fit:cover}
+.flow .btn{margin:.3rem .5rem 1rem 0}
+.flow>p+h2,.flow>ul+h2,.flow>ol+h2,.flow>figure+h2,.flow>blockquote+h2{
+  border-top:1px solid var(--line-soft);
+}
+
+/* long-form article page: one continuous editorial column */
+.article{background:var(--cream)}
+.article+.bg-cream{padding-top:0}
+.article .flow>p+h2,.article .flow>ul+h2,.article .flow>ol+h2,
+.article .flow>figure+h2,.article .flow>blockquote+h2{
+  margin-top:1.7em;padding-top:1.1em;
+}
+.article .flow h2{position:relative}
+.article .flow>p+h2::before,.article .flow>ul+h2::before,.article .flow>ol+h2::before,
+.article .flow>figure+h2::before,.article .flow>blockquote+h2::before{
+  content:"";position:absolute;top:-1px;left:0;width:44px;height:2px;background:var(--sage);
+}
+.article .flow ul.checks{
+  background:var(--white);border:1px solid var(--line-soft);border-radius:var(--r-md);
+  padding:.8rem 1.2rem;box-shadow:var(--shadow-card);
+  margin:.6rem 0 1rem 0 !important;
+  columns:2;column-gap:2rem;
+}
+.article .flow ul.checks li{break-inside:avoid;-webkit-column-break-inside:avoid}
+@media (max-width:700px){.article .flow ul.checks{columns:1}}
+
+/* ---------- testimonials: loud, primary content ---------- */
+.testi-lead{padding-top:var(--section-y)}
+.testi-lead .inner{max-width:var(--wrap);margin:0 auto}
+.testi-lead .eyebrow{justify-content:center}
+.testi-lead>.inner>h2{
+  text-align:center;max-width:20ch;margin:0 auto .2em;
+  font-size:clamp(1.9rem,3.4vw,2.7rem);
+}
+.testi-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.1rem,2.4vw,1.9rem);
+  margin-top:var(--s-7);
+}
+.testi-card{
+  background:#fff;border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-soft);padding:clamp(1.5rem,2.6vw,2.4rem);
+  display:flex;flex-direction:column;position:relative;overflow:hidden;
+}
+.testi-card::before{
+  content:"\201C";position:absolute;top:-.35rem;right:1rem;
+  font-family:var(--serif);font-size:6rem;color:var(--lilac);opacity:.28;line-height:1;
+}
+.testi-card:first-child{grid-column:1 / -1}
+.testi-card .testi-cat{
+  font-family:var(--sans);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:700;margin-bottom:.5rem;
+}
+.testi-card .testi-shift{
+  font-family:var(--serif);font-size:clamp(1.15rem,1.7vw,1.45rem);color:var(--plum);
+  font-style:italic;line-height:1.25;margin-bottom:.9rem;max-width:32ch;
+}
+.testi-card blockquote,.testi-card .testi-quote{
+  background:none;border:none;box-shadow:none;padding:0;margin:0;
+  font-size:clamp(1.02rem,1.5vw,1.18rem);line-height:1.6;color:var(--ink);
+}
+.testi-card .testi-quote::before{content:none}
+.testi-card .testi-by{
+  margin-top:1.1rem;font-family:var(--sans);font-weight:600;font-size:.9rem;
+  color:var(--ink-soft);letter-spacing:.02em;
+}
+.testi-card .testi-by::before{content:"— ";color:var(--lilac)}
+@media (max-width:720px){
+  .testi-grid{grid-template-columns:1fr}
+  .testi-card:first-child{grid-column:auto}
+}
+
+/* ---------- marquee word band ---------- */
+.word-band{
+  overflow:hidden;background:var(--plum-deep);padding:.62rem 0;
+  border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);
+}
+.word-band .track{
+  display:flex;gap:2.8rem;white-space:nowrap;width:max-content;
+  animation:band-scroll 34s linear infinite;
+}
+.word-band span{
+  font-family:var(--serif);font-size:1.05rem;color:var(--lilac);letter-spacing:.14em;
+  display:inline-flex;align-items:center;gap:2.8rem;
+}
+.word-band span::after{content:"✦";font-size:.62rem;color:var(--sage)}
+@keyframes band-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- blog index ---------- */
+/* four posts sat 3-across with a single orphan underneath. Two across divides
+   evenly, fills both rows and gives each thumbnail real size. */
+.blog-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.2rem,2.4vw,1.9rem);
+  margin-top:var(--s-6);grid-auto-rows:1fr;
+}
+/* an odd post count would otherwise leave a gap on the last row */
+.blog-grid>*:last-child:nth-child(odd){grid-column:1 / -1}
+.blog-card{
+  display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s;
+}
+.blog-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift);border-color:rgba(143,174,133,.5)}
+.blog-card .blog-thumb{aspect-ratio:16/10;overflow:hidden;background:var(--cream-deep)}
+.blog-card .blog-thumb img{width:100%;height:100%;object-fit:cover}
+.blog-card .blog-body{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;flex:1}
+.blog-meta{font-family:var(--sans);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:700;margin-bottom:.5rem;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.blog-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--lilac)}
+.blog-card h3{font-size:1.2rem;color:var(--plum);margin-bottom:.4rem;line-height:1.2}
+.blog-card p{color:var(--ink-soft);font-size:.92rem;line-height:1.55;max-width:none;margin-bottom:.9rem}
+.blog-card .text-link{margin-top:auto;align-self:flex-start;font-size:.85rem}
+@media (max-width:600px){
+  .blog-grid{grid-template-columns:1fr}
+  .blog-grid>*:last-child:nth-child(odd){grid-column:auto}
+}
+
+/* ---------- blog post: byline + adapted draft classes ---------- */
+.post-byline{color:#e8dff0;font-size:.92rem;margin-top:.9rem;font-family:var(--sans)}
+/* a block-level flex (not inline-flex) so the back link keeps its own line and a
+   following floated author portrait cannot land beside it */
+.post-back{display:flex;width:max-content;align-items:center;gap:.4rem;margin-bottom:1.4rem;font-weight:600;
+  font-size:.88rem;text-decoration:none;color:var(--sage-deep)}
+.post-back:hover{color:var(--plum)}
+.flow .rh-toc,.flow .rh-tocbox{
+  background:var(--sage-tint);border:1px solid var(--line-soft);border-radius:var(--r-md);
+  padding:1rem 1.4rem;margin:1.3rem 0;font-size:.94rem;
+}
+.flow .rh-toc strong,.flow .rh-tocbox strong{color:var(--plum);font-family:var(--sans);
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:.35rem}
+.flow .rh-toc ul,.flow .rh-tocbox ul{margin:.2rem 0 0 1.1rem}
+.flow .rh-poem{font-family:var(--serif);font-size:1.12rem;font-style:italic;color:var(--plum);border-left:3px solid var(--lilac)}
+.flow .rh-verse{font-size:.9em;font-style:normal;color:var(--ink-soft)}
+.flow .rh-signoff{margin-top:2.4rem;padding-top:1.3rem;border-top:1px solid var(--line-soft);
+  font-size:.94rem;color:var(--ink-soft)}
+.flow .rh-signoff strong{color:var(--plum)}
+
+/* ---------- CTA panel ---------- */
+.cta-panel{
+  background:linear-gradient(135deg,var(--plum-deep) 0%,var(--plum) 60%,#5f4472 100%);
+  border-radius:var(--r-lg);padding:clamp(1.9rem,3.4vw,2.9rem) clamp(1.4rem,3vw,2.6rem);
+  text-align:center;color:#fff;
+  position:relative;overflow:hidden;box-shadow:var(--shadow-soft);
+}
+.cta-panel h2,.cta-panel h3{color:#fff;position:relative;z-index:2}
+.cta-panel h2{max-width:24ch;margin-left:auto;margin-right:auto}
+.cta-panel h3{margin-top:1.15rem;font-size:1.22rem}
+.cta-panel p{color:#e8dff0;max-width:60ch;margin-left:auto;margin-right:auto;position:relative;z-index:2;font-size:.98rem}
+.cta-panel .btn{margin-top:1.1rem;position:relative;z-index:2}
+
+/* ---------- footer ---------- */
+.v2-footer{background:var(--plum-ink);color:#cfc3d9;padding:2.6rem var(--gutter) 1.2rem}
+.v2-footer .inner{max-width:var(--wrap);margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.25fr 1.15fr .85fr .85fr;gap:1.6rem 2rem;margin-bottom:1.7rem}
+.v2-footer h5{font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);margin-bottom:.6rem}
+.v2-footer ul{list-style:none}
+.v2-footer li{margin-bottom:.28rem}
+.v2-footer a{color:#cfc3d9;text-decoration:none;font-size:.855rem;line-height:1.45;transition:color .25s}
+.v2-footer a:hover{color:#fff}
+.v2-footer p{max-width:none}
+.foot-logo{background:#fff;border-radius:var(--r-sm);padding:.55rem;display:inline-block;margin-bottom:.6rem}
+.foot-logo img{height:42px}
+.foot-tag{font-family:var(--serif);font-size:1.05rem;color:#e8dff0}
+.foot-base{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:.95rem;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-size:.78rem;color:#9f8fae;
+}
+
+/* ---------- reveal animation ----------
+   New model: ONLY the first content section per page animates in (it is tagged
+   .intro-reveal). Everything below is already in place with no scroll reveal. */
+.reveal{opacity:1;transform:none}
+.intro-reveal .reveal{
+  opacity:0;transform:translateY(20px);
+  transition:opacity .7s var(--ease),transform .7s var(--ease);
+}
+.intro-reveal.in .reveal{opacity:1;transform:none}
+.intro-reveal.in .reveal.d1{transition-delay:.1s}
+.intro-reveal.in .reveal.d2{transition-delay:.2s}
+.intro-reveal.in .reveal.d3{transition-delay:.3s}
+/* the whole first section can also lift as one block when it has no reveal children */
+.intro-reveal.intro-block{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.intro-reveal.intro-block.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .intro-reveal .reveal,.intro-reveal.intro-block{opacity:1 !important;transform:none !important;transition:none}
+  .wing,.word-band .track,.scroll-hint span{animation:none !important}
+  *{transition-duration:.01ms !important}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  /* 7 services as 3 + 2 + 2: three full rows, nothing dangling */
+  .card-grid{grid-template-columns:repeat(6,1fr)}
+  .card-grid>*{grid-column:span 2}
+  .card-grid>*:nth-child(n+4){grid-column:span 3}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  /* 2 + 2 + 2 with the seventh card spanning the row, rather than three
+     cramped 225px cards across */
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card-grid>*,.card-grid>*:nth-child(n+4){grid-column:auto}
+  .card-grid>*:last-child:nth-child(odd){grid-column:1 / -1}
+}
+@media (max-width:960px){
+  :root{--section-y:clamp(2.3rem,5.5vw,3rem)}
+  .split{grid-template-columns:1fr;gap:1.9rem}
+  .split.rev>.media{order:0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .v2-nav{
+    position:fixed;inset:0;top:60px;background:var(--cream);flex-direction:column;
+    align-items:flex-start;
+    padding:1.6rem 1.4rem 3rem;transform:translateX(100%);transition:transform .35s var(--ease);
+    overflow-y:auto;z-index:99;gap:1rem;
+  }
+  .v2-nav.open{transform:none}
+  .v2-nav>ul{flex-direction:column;align-items:flex-start;gap:.9rem;width:100%}
+  .v2-nav>ul>li>a{font-size:1.02rem}
+  .dropdown{
+    position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;
+    background:transparent;border:none;min-width:0;padding:.25rem 0 0 .9rem;display:none;
+  }
+  .has-drop.open .dropdown{display:block}
+  .nav-toggle{display:block}
+}
+@media (max-width:640px){
+  :root{--fs-body:16px}
+  body{line-height:1.62}
+  .card-grid{grid-template-columns:1fr}
+  .card-grid>*,.card-grid>*:nth-child(n+4){grid-column:auto}
+  .steps{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:1.3rem}
+  .v2-logo img{height:40px}
+  .check-card{padding:1.3rem 1.15rem}
+  .cta-panel{padding:1.7rem 1.2rem}
+  blockquote,.quote{padding:1.2rem 1.1rem 1.2rem 2.6rem}
+  h2{max-width:none}
+  .foot-base{flex-direction:column;gap:.4rem}
+}
+@media (max-width:430px){
+  .foot-grid{grid-template-columns:1fr}
+}
+
+/* ================= service pages: card grids =================
+   Long stacked prose bands on the service pages are grouped into scannable
+   cards, using the same card language the home page service boxes use
+   (soft white panel, hairline border, sage-tinted hover lift). */
+/* Column counts are explicit per card count instead of auto-fit, because
+   auto-fit left ragged last rows (4 wide cards became 3 + 1 with a 680px hole,
+   5 became 3 + 2 with a 340px hole). Every count below fills every row. */
+.svc-cards{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:clamp(.85rem,1.6vw,1.25rem);
+  margin:1rem 0 1.5rem;
+}
+.svc-cards.wide{grid-template-columns:repeat(3,minmax(0,1fr))}
+.svc-cards.n2,.svc-cards.wide.n2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.svc-cards.n3,.svc-cards.wide.n3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.svc-cards.n4{grid-template-columns:repeat(4,minmax(0,1fr))}
+/* four wide cards read better as a 2 x 2 block than 3 + 1 */
+.svc-cards.wide.n4{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* five: 3 across then 2 across, both rows stretched to the full width */
+.svc-cards.n5,.svc-cards.wide.n5{grid-template-columns:repeat(6,minmax(0,1fr))}
+.svc-cards.n5>*{grid-column:span 2}
+.svc-cards.n5>*:nth-child(n+4){grid-column:span 3}
+.svc-card{
+  background:var(--white);border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-card);padding:clamp(1.05rem,1.8vw,1.5rem);
+  display:flex;flex-direction:column;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s var(--ease);
+}
+.svc-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--sage) 0%,var(--lilac) 100%);
+  transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease);
+}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift);border-color:rgba(143,174,133,.5)}
+.svc-card:hover::before{transform:scaleX(1)}
+.article .flow .svc-card h3{
+  margin-top:0;margin-bottom:.5em;color:var(--plum-deep);
+  font-size:clamp(1.06rem,1.45vw,1.2rem);
+}
+.svc-card>h3::after{
+  content:"";display:block;width:30px;height:2px;background:var(--sage);
+  margin:.55em 0 0;opacity:.75;
+}
+.svc-card p{font-size:.95rem;line-height:1.6;color:var(--ink-soft);margin-bottom:.6em}
+.svc-card p:last-child{margin-bottom:0}
+.svc-card strong{color:var(--plum-deep)}
+.svc-card h4{margin-top:.5em}
+/* lists inside a card are already on a panel: drop the nested panel styling */
+.article .flow .svc-card ul.checks{
+  background:none;border:none;box-shadow:none;padding:0;columns:1;
+  margin:.5rem 0 .7rem 0 !important;
+}
+.svc-card ul.checks li{font-size:.93rem}
+/* on the white-background article pages, tint the cards so they read as cards */
+.article.art-white .svc-card{background:var(--cream)}
+/* below the break-out width the cards live inside the reading column: two across,
+   and an odd final card spans the full width so the row is never half empty */
+@media (max-width:859px){
+  .svc-cards,.svc-cards.wide,
+  .svc-cards.n2,.svc-cards.n3,.svc-cards.n4,.svc-cards.n5,
+  .svc-cards.wide.n2,.svc-cards.wide.n3,.svc-cards.wide.n4,.svc-cards.wide.n5{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .svc-cards.n5>*,.svc-cards.n5>*:nth-child(n+4){grid-column:auto}
+  .svc-cards>*:last-child:nth-child(odd){grid-column:1 / -1}
+}
+@media (max-width:560px){
+  .svc-cards,.svc-cards.wide,
+  .svc-cards.n2,.svc-cards.n3,.svc-cards.n4,.svc-cards.n5,
+  .svc-cards.wide.n2,.svc-cards.wide.n3,.svc-cards.wide.n4,.svc-cards.wide.n5{
+    grid-template-columns:1fr;
+  }
+  .svc-cards>*:last-child:nth-child(odd){grid-column:auto}
+}
+
+/* ================= programs & packages: package cards ================= */
+.pkg-cards{display:grid;grid-template-columns:1fr;gap:clamp(1.1rem,2vw,1.7rem);margin:1.2rem 0 1.6rem}
+@media (min-width:1000px){.pkg-cards{grid-template-columns:repeat(3,1fr)}}
+.pkg-card{
+  background:var(--white);border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-card);padding:clamp(1.3rem,2.2vw,1.9rem);
+  position:relative;overflow:hidden;display:flex;flex-direction:column;
+  border-top:4px solid var(--plum);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.pkg-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift)}
+.pkg-card .pkg-num{
+  font-family:var(--serif);font-size:2.6rem;line-height:1;color:var(--lilac);
+  font-weight:600;display:block;margin-bottom:.15rem;
+}
+.article .flow .pkg-card .pkg-title{
+  margin-top:0;margin-bottom:.45em;font-size:clamp(1.25rem,1.9vw,1.6rem);
+  border-top:none;padding-top:0;
+}
+.article .flow .pkg-card .pkg-title::before{content:none}
+.article .flow .pkg-card h3{
+  margin-top:.9em;font-size:1rem;font-family:var(--sans);font-weight:700;
+  letter-spacing:.01em;color:var(--plum);
+}
+.article .flow .pkg-card h3:first-of-type{margin-top:0}
+.pkg-card p{font-size:.94rem;line-height:1.6}
+.article .flow .pkg-card ul.checks{
+  background:var(--cream);border:1px solid var(--line-soft);box-shadow:none;
+  columns:1;padding:.7rem .95rem;margin:.6rem 0 .8rem 0 !important;
+}
+.pkg-card ul.checks li{font-size:.9rem}
+/* the price line reads as a price */
+.pkg-card p:last-of-type{margin-bottom:0}
+
+/* eyebrow kickers sitting above an article heading */
+.article .flow>p.eyebrow{margin-bottom:.35rem}
+.article .flow>p.eyebrow+h2{margin-top:0;border-top:none;padding-top:0}
+.article .flow>p.eyebrow+h2::before{content:none}
+
+/* card grids break gently out of the narrow reading measure so the cards get
+   real width, while the prose keeps its comfortable line length */
+@media (min-width:860px){
+  .article .flow>.svc-cards{
+    width:min(1000px,calc(100vw - 2 * var(--gutter)));
+    position:relative;left:50%;
+    margin-left:calc(min(1000px,100vw - 2 * var(--gutter)) / -2);
+  }
+  .article .flow>.pkg-cards{
+    width:min(var(--wrap),calc(100vw - 2 * var(--gutter)));
+    position:relative;left:50%;
+    margin-left:calc(min(1180px,100vw - 2 * var(--gutter)) / -2);
+  }
+}
+
+/* ================= About: Lynette's portrait, complete and uncropped =========
+   The generic in-article figure rule crops every image to a 16:8 editorial
+   band, which was slicing her portrait down to just her head. These rules win
+   on specificity and render the source file whole, larger, in a soft mat. */
+.bio-block{grid-template-columns:1.05fr .95fr;align-items:center}
+.bio-portrait{position:relative;margin:0}
+.article .flow .bio-portrait figure{
+  margin:0 0 0 auto;max-width:430px;
+  background:linear-gradient(160deg,#fff 0%,var(--cream-deep) 100%);
+  padding:clamp(.7rem,1.2vw,1rem);
+  border:1px solid var(--line-soft);border-radius:var(--r-lg);
+  box-shadow:var(--shadow-soft);
+}
+.article .flow .bio-portrait figure img{
+  /* nothing cropped: natural aspect ratio, full frame */
+  aspect-ratio:auto;object-fit:fill;object-position:center;
+  width:100%;height:auto;max-width:none;
+  border-radius:var(--r-md);box-shadow:none;background:none;
+  display:block;
+}
+.bio-portrait::after{
+  content:"";position:absolute;z-index:-1;
+  right:-14px;bottom:-14px;width:min(430px,100%);height:100%;
+  border-radius:var(--r-lg);border:1.5px solid var(--sage);opacity:.5;
+  inset:auto -14px -14px auto;
+}
+@media (max-width:760px){
+  .bio-block{grid-template-columns:1fr}
+  .article .flow .bio-portrait figure{margin:0 auto;max-width:340px}
+  .bio-portrait::after{display:none}
+}
+
+/* ================= testimonials: same layout, easier to read =================
+   Bigger body size, roomier leading, a capped measure so the lead quote is not
+   a 1100px line, stronger contrast on the quote text, clearer attribution and
+   more air between cards. Wording and order untouched. */
+.testi-grid{gap:clamp(1.4rem,3vw,2.4rem)}
+.testi-lead>.inner>h2{margin-bottom:.35em}
+.testi-card{padding:clamp(1.7rem,3vw,2.8rem)}
+.testi-card::before{font-size:7rem;opacity:.22;top:-.5rem;right:1.2rem}
+.testi-card .testi-cat{
+  font-size:.75rem;letter-spacing:.2em;margin-bottom:.7rem;color:var(--sage-deep);
+}
+.testi-card .testi-shift{
+  font-size:clamp(1.2rem,1.8vw,1.5rem);line-height:1.3;margin-bottom:1.05rem;
+  color:var(--plum);max-width:30ch;
+}
+.testi-card .testi-shift em{color:inherit}
+.testi-card blockquote,.testi-card .testi-quote{
+  font-size:clamp(1.08rem,1.25vw,1.19rem);
+  line-height:1.78;
+  color:var(--ink);
+  max-width:60ch;
+  letter-spacing:.002em;
+}
+.testi-card .testi-by{
+  margin-top:1.4rem;padding-top:.9rem;border-top:1px solid var(--line-soft);
+  font-size:.95rem;font-weight:700;color:var(--plum);letter-spacing:.04em;
+}
+.testi-card .testi-by::before{content:"— ";color:var(--lilac);font-weight:400}
+/* lead testimonial: meta on the left, the quote in a comfortable column */
+@media (min-width:880px){
+  .testi-card:first-child{
+    display:grid;
+    grid-template-columns:minmax(190px,.8fr) minmax(0,1.65fr);
+    grid-template-rows:auto auto 1fr auto;
+    column-gap:clamp(2rem,4vw,3.4rem);
+  }
+  .testi-card:first-child .testi-cat{grid-column:1;grid-row:1}
+  .testi-card:first-child .testi-shift{grid-column:1;grid-row:2;margin-bottom:0}
+  .testi-card:first-child .testi-quote{grid-column:2;grid-row:1 / span 3}
+  .testi-card:first-child .testi-by{grid-column:2;grid-row:4}
+}
+
+.testi-lead .eyebrow{display:flex;justify-content:center}
+
+/* the entrance dragonfly stays immersive on narrow screens */
+@media (max-width:760px){
+  .df-reveal{width:min(52vw,240px)}
+}
+
+/* ================= testimonials: standout section (batch 4) =================
+   Jack: "make them look a little more clean, like they stand out a little bit
+   more". Same markup, same words, same order. This gives the section its own
+   ground, gives each card a crisp edge and a real accent, sets the quotes in
+   the brand serif at a larger size with generous leading, and makes the
+   attribution a designed element rather than a grey afterthought. */
+.testi-lead{
+  background:
+    radial-gradient(80% 60% at 12% 0%, var(--lilac-soft) 0%, transparent 62%),
+    radial-gradient(70% 55% at 92% 96%, var(--sage-tint) 0%, transparent 60%),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-deep) 100%);
+  padding-bottom:calc(var(--section-y) + 1rem);
+}
+/* a short brand rule under the section heading so the block reads as designed */
+.testi-lead>.inner>h2::after{
+  content:"";display:block;width:74px;height:3px;margin:.85rem auto 0;border-radius:2px;
+  background:linear-gradient(90deg, var(--sage-deep), var(--lilac));
+}
+.testi-grid{gap:clamp(1.6rem,3.2vw,2.6rem);margin-top:var(--s-8)}
+
+.testi-card{
+  background:var(--white);
+  border:1px solid rgba(75,46,90,.14);
+  border-radius:20px;
+  padding:clamp(2rem,3.4vw,3.1rem) clamp(1.7rem,3vw,2.9rem) clamp(1.7rem,3vw,2.5rem);
+  box-shadow:0 1px 0 rgba(75,46,90,.05), 0 18px 40px -26px rgba(45,27,56,.42);
+  overflow:visible;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease),
+             border-color .35s var(--ease);
+}
+.testi-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(75,46,90,.24);
+  box-shadow:0 1px 0 rgba(75,46,90,.05), 0 30px 60px -30px rgba(45,27,56,.5);
+}
+/* accent bar across the top edge, always on, so the cards are clearly separated */
+.testi-card::after{
+  content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:5px;
+  border-radius:20px 20px 0 0;
+  background:linear-gradient(90deg, var(--sage-deep) 0%, var(--lilac) 78%, var(--lilac-soft) 100%);
+}
+/* the quote mark becomes a deliberate mark set into the top edge, not a
+   giant washed-out glyph floating in the corner */
+.testi-card::before{
+  content:"\201C";
+  position:absolute;top:-24px;left:clamp(1.7rem,3vw,2.9rem);right:auto;
+  box-sizing:border-box;
+  width:54px;height:54px;display:flex;align-items:flex-start;justify-content:center;
+  border-radius:50%;overflow:hidden;
+  background:var(--plum);color:var(--lilac-soft);
+  font-family:var(--serif);font-size:2.9rem;line-height:.86;opacity:1;
+  padding-top:9px;
+  box-shadow:0 8px 18px -10px rgba(45,27,56,.7);
+}
+.testi-card .testi-cat{
+  display:inline-block;align-self:flex-start;
+  margin:.55rem 0 .9rem;padding:.34rem .8rem;
+  border-radius:999px;background:var(--sage-tint);
+  color:#3f5a37;font-size:.72rem;font-weight:700;letter-spacing:.16em;
+}
+.testi-card .testi-shift{
+  font-family:var(--serif);font-style:italic;color:var(--plum);
+  font-size:clamp(1.24rem,1.9vw,1.58rem);line-height:1.28;
+  margin:0 0 1.15rem;max-width:30ch;
+}
+.testi-card blockquote,.testi-card .testi-quote{
+  font-family:var(--serif);
+  font-size:clamp(1.24rem,1.55vw,1.44rem);
+  line-height:1.62;
+  color:#2f2739;
+  max-width:56ch;
+  letter-spacing:.004em;
+}
+.testi-card .testi-by{
+  margin-top:1.7rem;padding-top:0;border-top:none;
+  display:flex;align-items:center;gap:.7rem;
+  font-family:var(--sans);font-size:.96rem;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--plum);
+}
+.testi-card .testi-by::before{
+  content:"";flex:0 0 34px;height:2px;border-radius:2px;
+  background:linear-gradient(90deg, var(--sage-deep), var(--lilac));
+}
+/* lead testimonial: a hairline divider makes the two columns deliberate */
+@media (min-width:880px){
+  .testi-card:first-child{
+    column-gap:clamp(2.4rem,4.4vw,3.8rem);
+    grid-template-columns:minmax(200px,.78fr) minmax(0,1.7fr);
+  }
+  .testi-card:first-child .testi-quote{
+    padding-left:clamp(2.4rem,4.4vw,3.8rem);
+    border-left:1px solid var(--line);
+    margin-left:calc(-1 * clamp(2.4rem,4.4vw,3.8rem) / 2);
+  }
+}
+@media (max-width:720px){
+  .testi-card::before{width:46px;height:46px;font-size:2.5rem;top:-21px;padding-top:7px}
+}
+@media (prefers-reduced-motion:reduce){
+  .testi-card{transition:none}
+  .testi-card:hover{transform:none}
+}
+
+/* ================= blog post author portrait =================
+   Lynette's 599x757 head-and-shoulders photo was being rendered by the generic
+   in-article band rule at 790x395: upscaled 1.3x AND cropped through her face.
+   It is an author portrait, not an editorial band, so it gets its own role:
+   natural aspect ratio, never larger than the source, with the byline beside it. */
+.article .flow figure.post-author{
+  float:left;width:clamp(120px,17vw,168px);margin:.2rem 1.4rem .6rem 0;
+}
+.article .flow figure.post-author img{
+  aspect-ratio:599/757;object-fit:cover;object-position:50% 20%;
+  width:100%;height:auto;border-radius:var(--r-md);box-shadow:var(--shadow-card);
+}
+.article .flow figure.post-author+p{
+  margin-top:.35rem;font-family:var(--serif);font-size:1.1rem;
+  font-style:italic;color:var(--plum);line-height:1.35;
+}
+.article .flow figure.post-author~h3{clear:both}
+@media (max-width:560px){
+  .article .flow figure.post-author{float:none;width:150px;margin:.2rem 0 .8rem}
+}
+
+/* ---------- event promo card (bottom right) ----------
+   Injected by v2.js, self-expiring after the event date, dismissal remembered.
+   Sits above content but never over the hero entrance (which uses z-index 120+). */
+.promo-card{
+  position:fixed;right:clamp(.9rem,2vw,1.6rem);bottom:clamp(.9rem,2vw,1.6rem);z-index:90;
+  width:min(345px,calc(100vw - 1.8rem));
+  background:linear-gradient(158deg,#fff 0%,var(--cream) 100%);
+  border:1px solid var(--line);border-radius:var(--r-lg);
+  box-shadow:0 22px 60px rgba(45,27,56,.26);
+  padding:1.25rem 1.3rem 1.35rem;
+  opacity:0;transform:translateY(16px) scale(.98);
+  transition:opacity .45s var(--ease),transform .45s var(--ease);
+}
+.promo-card.is-open{opacity:1;transform:none}
+.promo-card::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:4px;
+  border-radius:var(--r-lg) var(--r-lg) 0 0;
+  background:linear-gradient(90deg,var(--sage) 0%,var(--lilac) 55%,var(--plum) 100%);
+}
+.promo-close{
+  position:absolute;top:.55rem;right:.6rem;width:30px;height:30px;
+  border:0;border-radius:50%;background:transparent;color:var(--ink-soft);
+  font-size:1.35rem;line-height:1;cursor:pointer;
+  transition:background .2s,color .2s;
+}
+.promo-close:hover{background:var(--lilac-soft);color:var(--plum)}
+.promo-kicker{
+  font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--sage-deep);font-weight:700;margin:.15rem 0 .4rem;max-width:none;
+}
+.promo-title{
+  font-family:var(--serif);color:var(--plum);font-size:1.32rem;line-height:1.14;
+  font-weight:600;margin:0 0 .35rem;max-width:none;
+}
+.promo-talk{font-size:.86rem;color:var(--ink-soft);margin:0 0 .75rem;max-width:none}
+.promo-talk em{color:var(--plum-deep);font-style:italic}
+.promo-facts{list-style:none;margin:0 0 .7rem;padding:0;border-top:1px solid var(--line-soft)}
+.promo-facts li{
+  display:flex;gap:.5rem;font-size:.83rem;line-height:1.45;color:var(--ink);
+  padding:.42rem 0;border-bottom:1px solid var(--line-soft);
+}
+.promo-facts span{
+  flex:none;width:44px;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;
+  font-weight:700;color:var(--sage-deep);padding-top:.22em;
+}
+.promo-note{font-size:.79rem;color:var(--ink-soft);margin:0 0 .85rem;max-width:none}
+.promo-cta{
+  display:block;text-align:center;background:var(--plum);color:#fff;
+  font-family:var(--sans);font-weight:600;font-size:.88rem;text-decoration:none;
+  padding:.68rem 1rem;border-radius:999px;
+  box-shadow:0 6px 18px rgba(75,46,90,.22);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s;
+}
+.promo-cta:hover{background:var(--plum-deep);transform:translateY(-2px);box-shadow:0 12px 28px rgba(75,46,90,.3)}
+@media (max-width:640px){
+  .promo-card{left:.7rem;right:.7rem;bottom:.7rem;width:auto;padding:1.05rem 1.1rem 1.15rem}
+  .promo-title{font-size:1.18rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .promo-card{transition:none;opacity:1;transform:none}
+  .promo-cta:hover{transform:none}
+}
