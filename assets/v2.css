@@ -1137,6 +1137,7 @@ blockquote::before,.quote::before{
   width:min(345px,calc(100vw - 1.8rem));
   background:linear-gradient(158deg,#fff 0%,var(--cream) 100%);
   border:1px solid var(--line);border-radius:var(--r-lg);
+  overflow:hidden;                 /* clip the top accent bar to the rounded corners */
   box-shadow:0 22px 60px rgba(45,27,56,.26);
   padding:1.25rem 1.3rem 1.35rem;
   opacity:0;transform:translateY(16px) scale(.98);
