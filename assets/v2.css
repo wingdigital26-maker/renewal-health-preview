@@ -1304,3 +1304,7 @@ blockquote::before,.quote::before{
   .promo-card{transition:none;opacity:1;transform:none}
   .promo-cta:hover{transform:none}
 }
+
+/* stack the two hero call-to-action buttons vertically instead of side by side */
+.home-hero .hero-cta{display:flex;flex-direction:column;align-items:center;gap:.75rem}
+.home-hero .hero-cta .btn{width:auto;min-width:min(360px,82vw);margin:0}
