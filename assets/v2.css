@@ -1308,3 +1308,28 @@ blockquote::before,.quote::before{
 /* stack the two hero call-to-action buttons vertically instead of side by side */
 .home-hero .hero-cta{display:flex;flex-direction:column;align-items:center;gap:.75rem}
 .home-hero .hero-cta .btn{width:auto;min-width:min(360px,82vw);margin:0}
+
+/* [v23] Services overview card "Learn more" links */
+.svc-card .svc-more{
+  display:inline-block;margin-top:.6rem;font-weight:600;font-size:.9rem;
+  color:var(--plum,#4b2e5a);text-decoration:none;letter-spacing:.01em;
+  border-bottom:1px solid rgba(75,46,90,.35);padding-bottom:1px;
+  transition:border-color .2s ease,color .2s ease}
+.svc-card .svc-more::after{content:" \2192";}
+.svc-card .svc-more:hover,.svc-card .svc-more:focus-visible{
+  color:var(--sage,#5f8155);border-bottom-color:var(--sage,#5f8155)}
+
+/* [v23] Programs "Renewal Path" stacked tiers */
+.pkg-cards.pkg-stack{grid-template-columns:1fr;max-width:820px;margin-left:auto;margin-right:auto}
+@media (min-width:1000px){.pkg-cards.pkg-stack{grid-template-columns:1fr}}
+.pkg-card .pkg-best{
+  background:rgba(183,156,201,.16);border-left:3px solid var(--lilac,#b79cc9);
+  padding:.6rem .9rem;border-radius:6px;margin:.6rem 0 .9rem;font-size:.95rem}
+.article .flow .pkg-card h4{
+  margin:.9rem 0 .3rem;font-family:inherit;font-size:1rem;color:var(--plum-deep,#3a2247);
+  font-weight:700;letter-spacing:.01em}
+.pkg-card .pkg-invest{
+  margin-top:1rem;padding-top:.8rem;border-top:1px solid rgba(75,46,90,.14);
+  font-size:.98rem;color:var(--plum-deep,#3a2247)}
+.pkg-card .pkg-cta{margin-top:1.1rem;margin-bottom:0}
+.pkg-card .pkg-cta .btn{width:100%;text-align:center}
