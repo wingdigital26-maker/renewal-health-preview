@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Contact Renewal Health with Lynette Wing | Begin Your Wellness Journey — Renewal Health with Lynette Wing</title>
 <meta content="Connect with Renewal Health with Lynette Wing to ask questions, schedule a consultation, or learn more about naturopathic care, homeopathy, detoxification, and mind-body wellness support." name="description"/>
-<link href="assets/v2.css?v=23" rel="stylesheet"/>
+<link href="assets/v2.css?v=24" rel="stylesheet"/>
 </head>
 <body>
 <header class="v2-header">
@@ -41,15 +41,17 @@
 </ul>
 </div>
 <div class="contact-form-wrap reveal d1">
-<!-- TODO: this contact form is UI only. Wire it to a backend/form handler at hosting time
-     (e.g. set the action + method, add a spam honeypot, and route submissions to Lynette).
-     The form is named "contact" and fields are name/email/phone/message for easy wiring. -->
-<form class="contact-form" name="contact" method="post" action="#" novalidate="novalidate">
+<form class="contact-form" name="contact" method="POST" action="https://api.web3forms.com/submit">
+<input type="hidden" name="access_key" value="5fec0d36-d572-4bb3-98af-e132dcd0f0d5"/>
+<input type="hidden" name="subject" value="New message from renewalhealth.life"/>
+<input type="hidden" name="from_name" value="Renewal Health Website"/>
+<input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true"/>
 <div class="field"><label for="cf-name">Name</label><input autocomplete="name" id="cf-name" name="name" required="required" type="text"/></div>
 <div class="field"><label for="cf-email">Email</label><input autocomplete="email" id="cf-email" name="email" required="required" type="email"/></div>
 <div class="field"><label for="cf-phone">Phone <span class="opt">(optional)</span></label><input autocomplete="tel" id="cf-phone" name="phone" type="tel"/></div>
 <div class="field"><label for="cf-message">Message</label><textarea id="cf-message" name="message" required="required" rows="5"></textarea></div>
 <button class="btn btn-primary" type="submit">Send Message</button>
+<p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
 </form>
 </div>
 </div>
@@ -72,6 +74,27 @@
 </div>
 </div>
 </footer>
-<script src="assets/v2.js?v=23"></script>
+<script src="assets/v2.js?v=24"></script>
+<script>
+(function(){
+  var form=document.querySelector('.contact-form');
+  if(!form) return;
+  var status=document.getElementById('form-status');
+  var btn=form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    status.hidden=false; status.className='form-status'; status.textContent='Sending your message...';
+    btn.disabled=true;
+    fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(r){return r.json();})
+      .then(function(j){
+        if(j.success){ form.reset(); status.className='form-status ok'; status.textContent='Thank you. Your message has been sent to Lynette, and she will be in touch soon.'; }
+        else { status.className='form-status err'; status.textContent='Something went wrong. Please email lynette@renewalhealth.life or call 580.461.1686.'; }
+      })
+      .catch(function(){ status.className='form-status err'; status.textContent='Could not send right now. Please email lynette@renewalhealth.life or call 580.461.1686.'; })
+      .then(function(){ btn.disabled=false; });
+  });
+})();
+</script>
 </body>
 </html>

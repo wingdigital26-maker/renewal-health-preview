@@ -1333,3 +1333,9 @@ blockquote::before,.quote::before{
   font-size:.98rem;color:var(--plum-deep,#3a2247)}
 .pkg-card .pkg-cta{margin-top:1.1rem;margin-bottom:0}
 .pkg-card .pkg-cta .btn{width:100%;text-align:center}
+
+/* contact form: spam honeypot (hidden) + submission status message */
+.contact-form .hp-field{position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none}
+.form-status{margin-top:.9rem;font-size:.9rem;line-height:1.45;padding:.7rem .9rem;border-radius:var(--r-sm);max-width:none}
+.form-status.ok{background:var(--sage-soft);color:var(--sage-ink);border:1px solid var(--line)}
+.form-status.err{background:#fbeee9;color:#9a3b25;border:1px solid #f0d3c8}
