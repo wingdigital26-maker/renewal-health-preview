@@ -886,6 +886,17 @@ blockquote::before,.quote::before{
   }
   .has-drop.open .dropdown{display:block}
   .nav-toggle{display:block}
+  /* backdrop-filter (and blur) create a containing block that traps the
+     position:fixed slide-in menu inside the ~60px header, hiding every link
+     below "Home". Drop it on mobile so the panel fills the whole screen. */
+  .v2-header,
+  .v2-header.scrolled,
+  body.has-hero .v2-header,
+  body.has-hero .v2-header.scrolled{
+    backdrop-filter:none;-webkit-backdrop-filter:none;
+  }
+  .v2-header.scrolled,
+  body.has-hero .v2-header.scrolled{background:var(--cream)}
   /* the mobile nav is a cream slide-in panel: keep its links dark (plum) in
      every header state so the scrolled white-link treatment never washes out */
   .v2-header.scrolled .v2-nav>ul>li>a,
