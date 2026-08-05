@@ -189,5 +189,15 @@
       <image:title>Gentle Detox: Why Your Body Cleanses Best Under Safety</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/gut-brain-connection.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-12</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/gut-brain-connection/hero.jpg</image:loc>
+      <image:title>The Gut-Brain Connection: Anxiety Starts in the Belly</image:title>
+    </image:image>
+  </url>
 </urlset>
 
