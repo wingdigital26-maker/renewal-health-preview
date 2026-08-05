@@ -741,6 +741,55 @@ blockquote::before,.quote::before{
   font-size:.94rem;color:var(--ink-soft)}
 .flow .rh-signoff strong{color:var(--plum)}
 
+/* ---------- blog post visual polish (scoped to .article) ---------- */
+/* Lead paragraph reads as a deck, with a serif drop cap for editorial warmth. */
+.article .flow>p:first-of-type{
+  font-size:1.17rem;line-height:1.72;color:var(--plum-deep);margin-bottom:1.1em;
+}
+.article .flow>p:first-of-type::first-letter{
+  float:left;font-family:var(--serif);font-weight:600;color:var(--sage-deep);
+  font-size:3.5rem;line-height:.78;padding:.05em .12em 0 0;
+}
+/* Calmer body rhythm: a touch more air between paragraphs. */
+.article .flow>p{margin-bottom:.95em;line-height:1.68}
+/* In-article images: gentler crop, hairline frame, soft lift on hover. */
+.article .flow>img{
+  aspect-ratio:16/9;border:1px solid var(--line-soft);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease);
+}
+.article .flow>img:hover{transform:translateY(-3px);box-shadow:var(--shadow-card)}
+/* Table of contents: left accent bar and clearer links. */
+.article .flow .rh-toc{
+  border-left:3px solid var(--sage);box-shadow:var(--shadow-card);
+}
+.article .flow .rh-toc ul{list-style:none;margin-left:0}
+.article .flow .rh-toc li{margin:.28rem 0}
+.article .flow .rh-toc a{
+  color:var(--plum);text-decoration:none;border-bottom:1px solid transparent;
+  transition:border-color .2s var(--ease);
+}
+.article .flow .rh-toc a:hover{border-bottom-color:var(--lilac)}
+/* Soft blockquote already styled; give it a warmer tint on the post page. */
+.article .flow blockquote{background:var(--sage-tint);border-left-color:var(--sage)}
+.article .flow blockquote::before{color:var(--sage)}
+/* Reflection callout: her signature "Pause for Reflection" as a calm card. */
+.article .flow .rh-reflect{
+  background:var(--sage-tint);border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);padding:1.5rem 1.7rem;margin:1.8rem 0;
+  box-shadow:var(--shadow-soft);
+}
+.article .flow .rh-reflect h2{margin-top:0}
+.article .flow .rh-reflect h2::before{display:none}
+.article .flow .rh-reflect>*:last-child{margin-bottom:0}
+/* FAQ: quiet dividers so each question reads as its own row. */
+.article .flow h2#faq+h3,
+.article .flow h2#faq~h3{
+  margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--line-soft);
+  color:var(--plum-deep);
+}
+/* Back-to-top and closing links sit quieter. */
+.article .flow p>a[href="#top"]{font-size:.85rem;color:var(--sage-deep)}
+
 /* ---------- CTA panel ---------- */
 .cta-panel{
   background:linear-gradient(135deg,var(--plum-deep) 0%,var(--plum) 60%,#5f4472 100%);
