@@ -1,208 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.renewalhealth.life/blog</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-08</lastmod>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/root-cause-healing-naturopathy-homeopathy</loc>
+    <loc>https://renewalhealth.life/about-lynette-wing-renewal-health.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-06-08</lastmod>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
     <image:image>
-      <image:loc>https://images.squarespace-cdn.com/content/v1/69de66d56f606e4d8a63fcb5/ae506f59-b01b-46aa-8f3c-631f198e8a83/lynette-wing-renewal-health.jpg</image:loc>
-      <image:title>Blog - Renewal Health: Why Your Body Needs a Master Builder, a Blueprint, and a Bridge - Make it stand out</image:title>
-      <image:caption>Lynette Wing | Registered Naturopath, Homeopath, &amp; Mind-Body Integration Specialist</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://images.squarespace-cdn.com/content/v1/69de66d56f606e4d8a63fcb5/da10ff3b-d336-4e25-828e-ebbf04844df7/renewal-health-naturopathy-homeopathy-1.jpg</image:loc>
-      <image:title>Blog - Renewal Health: Why Your Body Needs a Master Builder, a Blueprint, and a Bridge - Make it stand out</image:title>
-      <image:caption>Whatever it is, the way you tell your story online can make all the difference.</image:caption>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-about-waterlily.jpg</image:loc>
+      <image:title>About Lynette Wing</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/category/Naturopathy</loc>
+    <loc>https://renewalhealth.life/blog.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-blog-lavender-summer.jpg</image:loc>
+      <image:title>Blog</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/category/Root+Cause+Health</loc>
+    <loc>https://renewalhealth.life/contact-renewal-health.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-about-waterlily.jpg</image:loc>
+      <image:title>Contact Renewal Health with Lynette Wing</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/category/Homeopathy</loc>
+    <loc>https://renewalhealth.life/detox.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-detox-herbal-botanical.jpg</image:loc>
+      <image:title>Detox</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/tag/root+cause+healing</loc>
+    <loc>https://renewalhealth.life/emotional-overwhelm-nervous-system.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-emotional-calm-water.jpg</image:loc>
+      <image:title>Emotional Overwhelm &amp; Nervous System Support</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/tag/mind+body+connection</loc>
+    <loc>https://renewalhealth.life/gut-health-support.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-gut-green-fern.jpg</image:loc>
+      <image:title>Gut Health Support</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/tag/holistic+health</loc>
+    <loc>https://renewalhealth.life/hormone-balance-support.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-hormone-lavender.jpg</image:loc>
+      <image:title>Hormone Balance Support</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/blog/tag/lupus+recovery</loc>
+    <loc>https://renewalhealth.life/index.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/functional+health</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/detox</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/homeopathy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/nervous+system+regulation</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/Lynette+Wing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/naturopathy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/blog/tag/hormone+balance</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/home</loc>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-06-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/about-lynette-wing-renewal-health</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <image:image>
-      <image:loc>https://images.squarespace-cdn.com/content/v1/69de66d56f606e4d8a63fcb5/ae506f59-b01b-46aa-8f3c-631f198e8a83/lynette-wing-renewal-health.jpg</image:loc>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-about-waterlily.jpg</image:loc>
+      <image:title>Renewal Health with Lynette Wing</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/contact-renewal-health</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/inflammation-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-inflammation-eucalyptus-leaf.jpg</image:loc>
+      <image:title>Reduce Inflammation Naturally</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/detox</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/naturopathy-homeopathy-holistic-healing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-naturopathy-dried-herbs.jpg</image:loc>
+      <image:title>Naturopathy &amp; Homeopathy</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/gut-health-support</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/neurodivergent-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-neuro-green-foliage.jpg</image:loc>
+      <image:title>Neurodivergent Support</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/weight-metabolic-health</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/programs-packages.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-programs-tea-pour.jpg</image:loc>
+      <image:title>Health Programs &amp; Packages</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/hormone-balance-support</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-services-eucalyptus.jpg</image:loc>
+      <image:title>Services</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/inflammation-support</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/testimonials.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-testimonials-lake-reflection.jpg</image:loc>
+      <image:title>Patient Testimonials</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/emotional-overwhelm-nervous-system</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/weight-metabolic-health.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-weight-succulents.jpg</image:loc>
+      <image:title>Weight Loss &amp; Metabolic Health Support</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/neurodivergent-support</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/why-a-dragonfly-renewal-health.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/heroes/hero-dragonfly-lake.jpg</image:loc>
+      <image:title>Why the Dragonfly?</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://www.renewalhealth.life/programs-packages</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/testimonials</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/naturopathy-homeopathy-holistic-healing</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.renewalhealth.life/why-a-dragonfly-renewal-health</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.75</priority>
-    <lastmod>2026-06-02</lastmod>
+    <loc>https://renewalhealth.life/blog/chronic-inflammation-natural-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/chronic-inflammation-natural-support/hero.jpg</image:loc>
+      <image:title>Chronic Inflammation: The Quiet Fire in the Body</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://renewalhealth.life/blog/gentle-detox.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-08-11</lastmod>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
     <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/gentle-detox/hero-gentle-detox-morning-light.jpg</image:loc>
+      <image:loc>https://renewalhealth.life/assets/blog/gentle-detox/hero.jpg</image:loc>
       <image:title>Gentle Detox: Why Your Body Cleanses Best Under Safety</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://renewalhealth.life/blog/gut-brain-connection.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/gut-brain-connection/hero.jpg</image:loc>
       <image:title>The Gut-Brain Connection: Anxiety Starts in the Belly</image:title>
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/how-to-surrender-your-burdens-to-god.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-surrender-your-burdens-to-god/surrender-open-hands-sunrise.jpg</image:loc>
+      <image:title>It Is Not Mine to Carry: How to Surrender Your Burdens</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/root-cause-healing-naturopathy-homeopathy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/images.squarespace-cdn.com/content/v1/69de66d56f606e4d8a63fcb5/da10ff3b-d336-4e25-828e-ebbf04844df7/renewal-health-naturopathy-homeopathy-1.jpg</image:loc>
+      <image:title>Root-Cause Healing: Naturopathy, Homeopathy &amp; Mind-Body Integration</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/signs-of-hormone-imbalance.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
     <lastmod>2026-08-10</lastmod>
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/signs-of-hormone-imbalance/hero.jpg</image:loc>
@@ -210,14 +222,23 @@
     </image:image>
   </url>
   <url>
-    <loc>https://renewalhealth.life/blog/chronic-inflammation-natural-support.html</loc>
+    <loc>https://renewalhealth.life/blog/spiritual-growth-through-hardship.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
     <lastmod>2026-08-10</lastmod>
     <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/chronic-inflammation-natural-support/hero.jpg</image:loc>
-      <image:title>Chronic Inflammation: The Quiet Fire in the Body</image:title>
+      <image:loc>https://renewalhealth.life/assets/blog/spiritual-growth-through-hardship/oak-tree-straining-in-wind.jpg</image:loc>
+      <image:title>When Defeat Becomes a Doorway: Growth Through Hardship</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/vagal-tone-exercises.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/vagal-tone-exercises/deep-breathing-vagal-tone-exercise.jpg</image:loc>
+      <image:title>Vagal Tone Exercises: Partner With Your Hidden Engine</image:title>
     </image:image>
   </url>
 </urlset>
-
