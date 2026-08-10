@@ -209,5 +209,15 @@
       <image:title>Signs Your Hormones May Be Out of Balance</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/chronic-inflammation-natural-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/chronic-inflammation-natural-support/hero.jpg</image:loc>
+      <image:title>Chronic Inflammation: The Quiet Fire in the Body</image:title>
+    </image:image>
+  </url>
 </urlset>
 
