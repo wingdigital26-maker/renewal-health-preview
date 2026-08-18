@@ -251,4 +251,14 @@
       <image:title>Why Weight Will Not Budge When the Body Feels Unsafe</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/neurodivergent-nervous-system-support.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-18</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/neurodivergent-nervous-system-support/hero.jpg</image:loc>
+      <image:title>Nervous System Support for Neurodivergent Adults</image:title>
+    </image:image>
+  </url>
 </urlset>
