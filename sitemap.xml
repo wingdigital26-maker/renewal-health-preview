@@ -241,4 +241,14 @@
       <image:title>Vagal Tone Exercises: Partner With Your Hidden Engine</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-weight-will-not-budge.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-18</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-weight-will-not-budge/hero.jpg</image:loc>
+      <image:title>Why Weight Will Not Budge When the Body Feels Unsafe</image:title>
+    </image:image>
+  </url>
 </urlset>
