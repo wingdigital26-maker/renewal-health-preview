@@ -261,4 +261,14 @@
       <image:title>Why Weight Will Not Budge When the Body Feels Unsafe</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/chasing-symptoms-vs-finding-the-root.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-24</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/chasing-symptoms-vs-finding-the-root/hero.jpg</image:loc>
+      <image:title>Chasing Symptoms vs Finding the Root: What Root-Cause Really Means</image:title>
+    </image:image>
+  </url>
 </urlset>
