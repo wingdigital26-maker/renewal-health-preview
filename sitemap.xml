@@ -281,4 +281,14 @@
       <image:title>Rest and Digest: Why You Cannot Heal Your Gut While Bracing</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-homeopathy-plain-english-primer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-08-24</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-homeopathy-plain-english-primer/hero.jpg</image:loc>
+      <image:title>What Is Homeopathy, Really? A Plain-English Primer</image:title>
+    </image:image>
+  </url>
 </urlset>
