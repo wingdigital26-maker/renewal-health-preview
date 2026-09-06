@@ -107,7 +107,7 @@
   (function(){
     var EVENT = {
       key: 'rh-promo-book-nmnb',
-      url: 'contact-renewal-health.html'
+      url: 'book.html'
     };
     var preview = /(^|[?&])promo=now(&|$)/.test(location.search);
     try { if(!preview && localStorage.getItem(EVENT.key) === 'dismissed') return; } catch(e){}

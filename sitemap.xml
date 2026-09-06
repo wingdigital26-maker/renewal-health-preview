@@ -12,6 +12,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/book.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-09-06</lastmod>
+  </url>
+  <url>
+    <loc>https://renewalhealth.life/guide.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-09-06</lastmod>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
