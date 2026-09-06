@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Renewal Health | Client Book</title>
+<style>
+:root{
+  --plum:#4b2e5a; --plum-deep:#372145; --plum-ink:#2d1b38;
+  --lilac:#b79cc9; --lilac-soft:#e9e1f0;
+  --sage:#8fae85; --sage-deep:#5f8155; --sage-tint:#eef3ea;
+  --cream:#faf7f2; --cream-deep:#f3ede4; --white:#ffffff;
+  --ink:#3a3141; --ink-soft:#5f5568; --gold:#c9a24b;
+  --line:rgba(75,46,90,.12);
+  --serif:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --shadow:0 6px 22px rgba(75,46,90,.09);
+  --danger:#a4413f; --danger-bg:#f7e9e8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+header{background:var(--plum);color:var(--cream);padding:1.1rem 1.2rem;display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+header .mark{width:44px;height:44px;border-radius:50%;background:var(--sage);color:var(--plum-ink);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:1.25rem;flex:none}
+header h1{font-family:var(--serif);font-weight:600;font-size:1.55rem;letter-spacing:.01em}
+header .sub{font-size:.82rem;opacity:.8;width:100%;margin-left:56px;margin-top:-6px}
+.wrap{max-width:1080px;margin:0 auto;padding:1.1rem 1.2rem 4rem}
+.toolbar{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:1rem 0}
+.toolbar input[type=search]{flex:1;min-width:220px}
+input,select,textarea,button{font:inherit;color:inherit}
+input,select,textarea{background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:.75rem .9rem;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--sage);border-color:var(--sage-deep)}
+button{cursor:pointer;border:none;border-radius:12px;padding:.8rem 1.2rem;font-weight:600;min-height:48px}
+.btn-primary{background:var(--sage-deep);color:#fff}
+.btn-primary:hover{background:#527047}
+.btn-plum{background:var(--plum);color:var(--cream)}
+.btn-quiet{background:var(--cream-deep);color:var(--plum)}
+.btn-danger{background:var(--danger-bg);color:var(--danger)}
+.tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin:.4rem 0 1rem}
+.tabs button{background:var(--white);border:1.5px solid var(--line);color:var(--ink-soft);border-radius:999px;padding:.55rem 1.05rem;min-height:44px;font-size:.92rem}
+.tabs button.on{background:var(--plum);border-color:var(--plum);color:var(--cream)}
+.tabs button .n{opacity:.75;font-weight:400}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:1.05rem 1.15rem;margin-bottom:.8rem}
+.card.overdue{border-left:6px solid var(--danger)}
+.card h3{font-family:var(--serif);font-size:1.35rem;color:var(--plum);font-weight:600}
+.meta{display:flex;gap:.7rem 1.2rem;flex-wrap:wrap;font-size:.9rem;color:var(--ink-soft);margin:.35rem 0 .55rem}
+.meta a{color:var(--sage-deep);text-decoration:none;font-weight:600}
+.pill{display:inline-block;border-radius:999px;padding:.2rem .75rem;font-size:.8rem;font-weight:600;letter-spacing:.02em}
+.pill.stage-0{background:var(--lilac-soft);color:var(--plum)}
+.pill.stage-1{background:#f4ecd9;color:#8a6d2a}
+.pill.stage-2{background:var(--sage-tint);color:var(--sage-deep)}
+.pill.stage-3{background:#e8eef5;color:#3d5a7a}
+.pill.stage-4{background:var(--cream-deep);color:var(--ink-soft)}
+.pill.due{background:var(--danger-bg);color:var(--danger)}
+.pill.svc{background:var(--cream-deep);color:var(--ink-soft);font-weight:500}
+.rowbtns{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.6rem}
+.rowbtns button{min-height:44px;padding:.55rem .95rem;font-size:.92rem}
+.notes{margin-top:.7rem;border-top:1px dashed var(--line);padding-top:.6rem}
+.note{background:var(--cream);border-radius:10px;padding:.5rem .75rem;margin-bottom:.45rem;font-size:.95rem}
+.note time{display:block;font-size:.75rem;color:var(--ink-soft)}
+.noterow{display:flex;gap:.5rem;margin-top:.4rem}
+.noterow input{flex:1}
+.empty{background:var(--sage-tint);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.3rem;color:var(--ink)}
+.empty h2{font-family:var(--serif);color:var(--plum);font-weight:600;margin-bottom:.5rem}
+.empty ul{list-style:none;margin-top:.4rem}
+.empty li{padding:.3rem 0}
+.empty b{color:var(--sage-deep)}
+dialog{border:none;border-radius:18px;box-shadow:var(--shadow);padding:1.4rem;width:min(560px,94vw);background:var(--white)}
+dialog::backdrop{background:rgba(45,27,56,.45)}
+dialog h2{font-family:var(--serif);color:var(--plum);font-weight:600;margin-bottom:.8rem}
+.field{margin-bottom:.75rem}
+.field label{display:block;font-size:.85rem;font-weight:600;color:var(--plum);margin-bottom:.25rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media(max-width:560px){.grid2{grid-template-columns:1fr}}
+.dlgbtns{display:flex;gap:.6rem;justify-content:flex-end;margin-top:1rem;flex-wrap:wrap}
+.savebar{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--plum);color:var(--cream);border-radius:999px;padding:.5rem 1.2rem;font-size:.85rem;opacity:0;transition:opacity .3s;pointer-events:none}
+.savebar.show{opacity:1}
+.count{font-size:.9rem;color:var(--ink-soft);margin:.3rem 0 .8rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="mark">RH</div>
+  <h1>Renewal Health Client Book</h1>
+  <div class="sub">Your private list of leads and clients. Everything stays on this device until you export it.</div>
+</header>
+
+<div class="wrap">
+  <div class="toolbar">
+    <input type="search" id="q" placeholder="Search by name, phone, email, or interest" aria-label="Search contacts">
+    <button class="btn-primary" id="addBtn">+ Add contact</button>
+    <button class="btn-quiet" id="exportBtn">Save backup</button>
+    <button class="btn-quiet" id="importBtn">Load backup</button>
+    <input type="file" id="importFile" accept=".json,application/json" hidden>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+</div>
+
+<dialog id="dlg">
+  <h2 id="dlgTitle">Add contact</h2>
+  <form id="form" method="dialog">
+    <div class="field"><label for="f_name">Name</label><input id="f_name" required autocomplete="off"></div>
+    <div class="grid2">
+      <div class="field"><label for="f_phone">Phone</label><input id="f_phone" type="tel" autocomplete="off"></div>
+      <div class="field"><label for="f_email">Email</label><input id="f_email" type="email" autocomplete="off"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label for="f_source">How they found you</label>
+        <select id="f_source">
+          <option>Website</option><option>Referral</option><option>Word of mouth</option>
+          <option>Social media</option><option>Existing client</option><option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="f_service">Area of interest</label>
+        <select id="f_service">
+          <option>Detox</option><option>Gut Health</option><option>Hormones</option>
+          <option>Inflammation</option><option>Weight</option><option>Neurodivergent Care</option>
+          <option>Emotional Overwhelm</option><option>General wellness</option><option>Not sure yet</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label for="f_stage">Stage</label><select id="f_stage"></select></div>
+      <div class="field"><label for="f_follow">Next follow up</label><input id="f_follow" type="date"></div>
+    </div>
+    <div class="dlgbtns">
+      <button type="button" class="btn-quiet" id="cancelBtn">Cancel</button>
+      <button type="submit" class="btn-primary" id="saveBtn">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="savebar" id="savebar">Saved</div>
+
+<script>
+"use strict";
+var STAGES = ["New Inquiry","Consult Scheduled","Active Client","Maintenance","Closed"];
+var STAGE_HELP = [
+  "Someone new reached out and is waiting to hear back from you.",
+  "A consult is on the calendar. Confirm the day before.",
+  "Working with you now. Keep notes after each visit.",
+  "Doing well and checking in now and then.",
+  "Not moving forward right now. It is okay to circle back later."
+];
+var KEY = "rh-crm-v1";
+var contacts = [];
+var view = "overdue-first";
+var editingId = null;
+
+function load(){
+  try{
+    var raw = localStorage.getItem(KEY);
+    if(raw){ var d = JSON.parse(raw); if(Array.isArray(d.contacts)) contacts = d.contacts; }
+  }catch(e){ contacts = []; }
+}
+function save(){
+  try{
+    localStorage.setItem(KEY, JSON.stringify({version:1, savedAt:new Date().toISOString(), contacts:contacts}));
+    var b = document.getElementById("savebar");
+    b.classList.add("show");
+    setTimeout(function(){ b.classList.remove("show"); }, 1200);
+  }catch(e){
+    alert("Could not save on this device. Please use Save backup so nothing is lost.");
+  }
+}
+function uid(){ return "c" + Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function todayStr(){ var d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function isOverdue(c){ return c.followUp && c.stage !== 4 && c.followUp < todayStr(); }
+function fmtDate(s){
+  if(!s) return "";
+  try{ var p=s.split("-"); return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}); }catch(e){ return s; }
+}
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m];}); }
+
+function renderTabs(){
+  var counts = STAGES.map(function(_,i){ return contacts.filter(function(c){return c.stage===i;}).length; });
+  var od = contacts.filter(isOverdue).length;
+  var html = '<button data-v="overdue-first" class="'+(view==="overdue-first"?"on":"")+'">All <span class="n">('+contacts.length+')</span></button>';
+  html += '<button data-v="overdue" class="'+(view==="overdue"?"on":"")+'">Needs follow up <span class="n">('+od+')</span></button>';
+  STAGES.forEach(function(s,i){
+    html += '<button data-v="s'+i+'" class="'+(view==="s"+i?"on":"")+'">'+s+' <span class="n">('+counts[i]+')</span></button>';
+  });
+  document.getElementById("tabs").innerHTML = html;
+}
+
+function visibleContacts(){
+  var q = document.getElementById("q").value.trim().toLowerCase();
+  var rows = contacts.filter(function(c){
+    if(q){
+      var hay = [c.name,c.phone,c.email,c.source,c.service,STAGES[c.stage]].join(" ").toLowerCase();
+      if(hay.indexOf(q) < 0) return false;
+    }
+    if(view === "overdue") return isOverdue(c);
+    if(view.charAt(0) === "s" && view.length === 2) return c.stage === +view.charAt(1);
+    return true;
+  });
+  rows.sort(function(a,b){
+    var ao = isOverdue(a)?0:1, bo = isOverdue(b)?0:1;
+    if(ao !== bo) return ao - bo;
+    var af = a.followUp || "9999", bf = b.followUp || "9999";
+    if(af !== bf) return af < bf ? -1 : 1;
+    return a.name.localeCompare(b.name);
+  });
+  return rows;
+}
+
+function render(){
+  renderTabs();
+  var rows = visibleContacts();
+  var list = document.getElementById("list");
+  document.getElementById("count").textContent = contacts.length ? rows.length + " of " + contacts.length + " contacts" : "";
+  if(!contacts.length){
+    var help = STAGES.map(function(s,i){ return "<li><b>"+s+"</b>: "+STAGE_HELP[i]+"</li>"; }).join("");
+    list.innerHTML = '<div class="empty"><h2>Welcome to your client book</h2>'
+      + '<p>Tap <b>+ Add contact</b> to start. Each person moves through five simple stages:</p><ul>'+help+'</ul>'
+      + '<p style="margin-top:.6rem">Tap <b>Save backup</b> now and then to keep a copy of everything as a file.</p></div>';
+    return;
+  }
+  if(!rows.length){ list.innerHTML = '<div class="empty"><p>No contacts match this view.</p></div>'; return; }
+  list.innerHTML = rows.map(function(c){
+    var od = isOverdue(c);
+    var meta = [];
+    if(c.phone) meta.push('<a href="tel:'+esc(c.phone)+'">'+esc(c.phone)+'</a>');
+    if(c.email) meta.push('<a href="mailto:'+esc(c.email)+'">'+esc(c.email)+'</a>');
+    if(c.source) meta.push("From: "+esc(c.source));
+    var pills = '<span class="pill stage-'+c.stage+'">'+STAGES[c.stage]+'</span> <span class="pill svc">'+esc(c.service)+'</span>';
+    if(c.followUp) pills += ' <span class="pill '+(od?'due':'svc')+'">'+(od?'Overdue: ':'Follow up: ')+fmtDate(c.followUp)+'</span>';
+    var notes = (c.notes||[]).slice().reverse().map(function(n){
+      return '<div class="note"><time>'+esc(new Date(n.at).toLocaleString(undefined,{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"}))+'</time>'+esc(n.text)+'</div>';
+    }).join("");
+    var stageBtns = "";
+    if(c.stage < 4) stageBtns = '<button class="btn-plum" data-act="advance" data-id="'+c.id+'">Move to '+STAGES[c.stage+1]+'</button>';
+    return '<div class="card'+(od?' overdue':'')+'" data-id="'+c.id+'">'
+      + '<h3>'+esc(c.name)+'</h3>'
+      + '<div class="meta">'+meta.join(" &middot; ")+'</div>'
+      + '<div>'+pills+'</div>'
+      + '<div class="rowbtns">'+stageBtns
+      + '<button class="btn-quiet" data-act="edit" data-id="'+c.id+'">Edit</button>'
+      + '<button class="btn-danger" data-act="del" data-id="'+c.id+'">Remove</button></div>'
+      + '<div class="notes">'+notes
+      + '<div class="noterow"><input placeholder="Add a note" data-noteinput="'+c.id+'" aria-label="Add a note">'
+      + '<button class="btn-quiet" data-act="note" data-id="'+c.id+'">Add</button></div></div>'
+      + '</div>';
+  }).join("");
+}
+
+// dialog
+var dlg = document.getElementById("dlg");
+function openForm(c){
+  editingId = c ? c.id : null;
+  document.getElementById("dlgTitle").textContent = c ? "Edit contact" : "Add contact";
+  var sel = document.getElementById("f_stage");
+  sel.innerHTML = STAGES.map(function(s,i){ return '<option value="'+i+'">'+s+'</option>'; }).join("");
+  document.getElementById("f_name").value = c ? c.name : "";
+  document.getElementById("f_phone").value = c ? c.phone : "";
+  document.getElementById("f_email").value = c ? c.email : "";
+  document.getElementById("f_source").value = c ? c.source : "Website";
+  document.getElementById("f_service").value = c ? c.service : "Not sure yet";
+  sel.value = c ? c.stage : 0;
+  document.getElementById("f_follow").value = c ? (c.followUp||"") : "";
+  dlg.showModal();
+}
+document.getElementById("addBtn").onclick = function(){ openForm(null); };
+document.getElementById("cancelBtn").onclick = function(){ dlg.close(); };
+document.getElementById("form").onsubmit = function(){
+  var data = {
+    name: document.getElementById("f_name").value.trim(),
+    phone: document.getElementById("f_phone").value.trim(),
+    email: document.getElementById("f_email").value.trim(),
+    source: document.getElementById("f_source").value,
+    service: document.getElementById("f_service").value,
+    stage: +document.getElementById("f_stage").value,
+    followUp: document.getElementById("f_follow").value
+  };
+  if(!data.name) return;
+  if(editingId){
+    var c = contacts.find(function(x){return x.id===editingId;});
+    if(c) Object.assign(c, data);
+  }else{
+    data.id = uid(); data.notes = []; data.createdAt = new Date().toISOString();
+    contacts.push(data);
+  }
+  save(); render();
+};
+
+// list actions
+document.getElementById("list").addEventListener("click", function(ev){
+  var b = ev.target.closest("button[data-act]");
+  if(!b) return;
+  var id = b.getAttribute("data-id");
+  var c = contacts.find(function(x){return x.id===id;});
+  if(!c) return;
+  var act = b.getAttribute("data-act");
+  if(act === "edit") openForm(c);
+  if(act === "advance" && c.stage < 4){ c.stage++; save(); render(); }
+  if(act === "del"){
+    if(confirm("Remove " + c.name + " from your client book? A backup file keeps a copy if you saved one.")){
+      contacts = contacts.filter(function(x){return x.id!==id;}); save(); render();
+    }
+  }
+  if(act === "note"){
+    var inp = document.querySelector('input[data-noteinput="'+id+'"]');
+    var text = inp ? inp.value.trim() : "";
+    if(text){ (c.notes = c.notes||[]).push({at:new Date().toISOString(), text:text}); save(); render(); }
+  }
+});
+document.getElementById("list").addEventListener("keydown", function(ev){
+  if(ev.key === "Enter" && ev.target.hasAttribute("data-noteinput")){
+    ev.preventDefault();
+    var id = ev.target.getAttribute("data-noteinput");
+    var btn = document.querySelector('button[data-act="note"][data-id="'+id+'"]');
+    if(btn) btn.click();
+  }
+});
+
+// tabs + search
+document.getElementById("tabs").addEventListener("click", function(ev){
+  var b = ev.target.closest("button[data-v]");
+  if(b){ view = b.getAttribute("data-v"); render(); }
+});
+document.getElementById("q").addEventListener("input", render);
+
+// export / import
+document.getElementById("exportBtn").onclick = function(){
+  var blob = new Blob([JSON.stringify({version:1, exportedAt:new Date().toISOString(), contacts:contacts}, null, 2)], {type:"application/json"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "renewal-health-client-book-" + todayStr() + ".json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function(){ URL.revokeObjectURL(a.href); }, 5000);
+};
+document.getElementById("importBtn").onclick = function(){ document.getElementById("importFile").click(); };
+document.getElementById("importFile").onchange = function(ev){
+  var f = ev.target.files[0];
+  if(!f) return;
+  var r = new FileReader();
+  r.onload = function(){
+    try{
+      var d = JSON.parse(r.result);
+      var list = Array.isArray(d) ? d : d.contacts;
+      if(!Array.isArray(list)) throw new Error("bad file");
+      var byId = {};
+      contacts.forEach(function(c){ byId[c.id] = c; });
+      var added = 0, updated = 0;
+      list.forEach(function(c){
+        if(!c || !c.name) return;
+        if(c.id && byId[c.id]){ Object.assign(byId[c.id], c); updated++; }
+        else{ if(!c.id) c.id = uid(); c.notes = c.notes||[]; contacts.push(c); byId[c.id]=c; added++; }
+      });
+      save(); render();
+      alert("Backup loaded: " + added + " added, " + updated + " updated.");
+    }catch(e){
+      alert("That file could not be read. Please choose a backup saved from this page.");
+    }
+  };
+  r.readAsText(f);
+  ev.target.value = "";
+};
+
+load(); render();
+</script>
+</body>
+</html>
