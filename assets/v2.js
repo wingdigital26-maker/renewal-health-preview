@@ -100,36 +100,29 @@
     }, {passive:true});
   }
 
-  // ---- event promo card (bottom right) -------------------------------------
-  // Woman at the Wellness Conference, 2026-08-08. Lynette is a speaker.
-  // Self-expiring: it stops rendering the day after the event, so the site never
-  // advertises a date that has passed. Dismissal is remembered per visitor.
+  // ---- book promo card (bottom right) --------------------------------------
+  // Lynette's book: Nothing Missing, Nothing Broken. No expiry (a book does not
+  // pass like an event). Dismissal is remembered per visitor. Swap the CTA href
+  // for the purchase link (Amazon etc.) once Lynette has one.
   (function(){
     var EVENT = {
-      key: 'rh-promo-watwc-2026-08-08',
-      endsISO: '2026-08-09T00:00:00',
-      url: 'https://aroundthetable.life/events'
+      key: 'rh-promo-book-nmnb',
+      url: 'contact-renewal-health.html'
     };
-    if(new Date() >= new Date(EVENT.endsISO)) return;
     var preview = /(^|[?&])promo=now(&|$)/.test(location.search);
     try { if(!preview && localStorage.getItem(EVENT.key) === 'dismissed') return; } catch(e){}
 
     var card = document.createElement('aside');
     card.className = 'promo-card';
     card.setAttribute('role', 'complementary');
-    card.setAttribute('aria-label', 'Upcoming event: Woman at the Wellness Conference');
+    card.setAttribute('aria-label', 'Announcement: Nothing Missing, Nothing Broken, the new book by Lynette Wing');
     card.innerHTML =
-      '<button class="promo-close" type="button" aria-label="Close event notice">&times;</button>' +
-      '<p class="promo-kicker">Lynette is speaking</p>' +
-      '<h2 class="promo-title">Woman at the Wellness Conference</h2>' +
-      '<p class="promo-talk">Her talk: <em>Nothing Missing, Nothing Broken</em></p>' +
-      '<ul class="promo-facts">' +
-        '<li><span>When</span>Saturday, August 8, 2026 · 9:00am to 5:00pm</li>' +
-        '<li><span>Where</span>The Sims Barn, Canyon, Texas</li>' +
-        '<li><span>Cost</span>$120 per person, lunch provided</li>' +
-      '</ul>' +
-      '<p class="promo-note">Seats are limited. Please register by August 4.</p>' +
-      '<a class="promo-cta" href="' + EVENT.url + '" target="_blank" rel="noopener">Save your spot</a>';
+      '<button class="promo-close" type="button" aria-label="Close book notice">&times;</button>' +
+      '<p class="promo-kicker">New from Lynette</p>' +
+      '<h2 class="promo-title">Nothing Missing, Nothing Broken</h2>' +
+      '<p class="promo-talk">The new book by <em>Lynette Wing RN, HHP</em></p>' +
+      '<p class="promo-note">A look at whole-person healing: why your body is not broken, and how renewal begins at the root.</p>' +
+      '<a class="promo-cta" href="' + EVENT.url + '">Ask Lynette about the book</a>';
 
     function dismiss(){
       card.classList.remove('is-open');
