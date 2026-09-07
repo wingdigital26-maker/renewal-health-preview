@@ -333,4 +333,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/glimmers-nervous-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-07</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/glimmers-nervous-system/hero.jpg</image:loc>
+      <image:title>Glimmers: Training Your Body to Notice Safety Again</image:title>
+    </image:image>
+  </url>
 </urlset>
