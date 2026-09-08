@@ -381,4 +381,14 @@
       <image:title>The Master Thread: Healing Patterns You Did Not Start</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-shalom-means-for-your-body.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-08</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-shalom-means-for-your-body/hero.jpg</image:loc>
+      <image:title>Nothing Missing, Nothing Broken: What Shalom Means for Your Body</image:title>
+    </image:image>
+  </url>
 </urlset>
