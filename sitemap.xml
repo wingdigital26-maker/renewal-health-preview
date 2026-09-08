@@ -371,4 +371,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/master-thread-inherited-patterns.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-08</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/master-thread-inherited-patterns/hero.jpg</image:loc>
+      <image:title>The Master Thread: Healing Patterns You Did Not Start</image:title>
+    </image:image>
+  </url>
 </urlset>
