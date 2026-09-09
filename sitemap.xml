@@ -401,4 +401,14 @@
       <image:title>How to Stop Taking Things Personally, and Why It Helps</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/body-soul-spirit-healing-order.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-09</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/body-soul-spirit-healing-order/hero.jpg</image:loc>
+      <image:title>Body, Soul, Spirit: Why the Healing Order Matters</image:title>
+    </image:image>
+  </url>
 </urlset>
