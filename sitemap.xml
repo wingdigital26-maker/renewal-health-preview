@@ -441,4 +441,14 @@
       <image:title>The Apology Reflex: Why You Say Sorry for Taking Up Space</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/waking-up-tired-after-full-night-sleep.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/waking-up-tired-after-full-night-sleep/hero.jpg</image:loc>
+      <image:title>Why You Wake Up Tired After a Full Night&#x27;s Sleep</image:title>
+    </image:image>
+  </url>
 </urlset>
