@@ -421,4 +421,14 @@
       <image:title>The Art of the Anchor: Grounding When Life Shakes You</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/mind-body-connection-healing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/mind-body-connection-healing/hero.jpg</image:loc>
+      <image:title>Mind-Body Integration: The Missing Link in Healing</image:title>
+    </image:image>
+  </url>
 </urlset>
