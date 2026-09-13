@@ -431,4 +431,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/apology-reflex-taking-up-space.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/apology-reflex-taking-up-space/hero.jpg</image:loc>
+      <image:title>The Apology Reflex: Why You Say Sorry for Taking Up Space</image:title>
+    </image:image>
+  </url>
 </urlset>
