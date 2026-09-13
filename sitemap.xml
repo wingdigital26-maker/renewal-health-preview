@@ -192,6 +192,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/apology-reflex-taking-up-space.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/apology-reflex-taking-up-space/hero.jpg</image:loc>
+      <image:title>The Apology Reflex: Why You Say Sorry for Taking Up Space</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/body-is-an-honest-witness.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -239,6 +249,16 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/cortisol-and-belly-weight/hero.jpg</image:loc>
       <image:title>Cortisol, Safety, and the Belly That Will Not Let Go</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/daily-rhythm-body-soul-spirit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/daily-rhythm-body-soul-spirit/hero.jpg</image:loc>
+      <image:title>A Daily Rhythm for Body, Soul, and Spirit</image:title>
     </image:image>
   </url>
   <url>
@@ -392,6 +412,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/waking-up-tired-after-full-night-sleep.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/waking-up-tired-after-full-night-sleep/hero.jpg</image:loc>
+      <image:title>Why You Wake Up Tired After a Full Night&#x27;s Sleep</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/what-is-homeopathy-plain-english-primer.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -429,36 +459,6 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/wired-but-tired/hero.jpg</image:loc>
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/apology-reflex-taking-up-space.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-09-13</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/apology-reflex-taking-up-space/hero.jpg</image:loc>
-      <image:title>The Apology Reflex: Why You Say Sorry for Taking Up Space</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/waking-up-tired-after-full-night-sleep.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-09-13</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/waking-up-tired-after-full-night-sleep/hero.jpg</image:loc>
-      <image:title>Why You Wake Up Tired After a Full Night&#x27;s Sleep</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/daily-rhythm-body-soul-spirit.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-09-13</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/daily-rhythm-body-soul-spirit/hero.jpg</image:loc>
-      <image:title>A Daily Rhythm for Body, Soul, and Spirit</image:title>
     </image:image>
   </url>
 </urlset>
