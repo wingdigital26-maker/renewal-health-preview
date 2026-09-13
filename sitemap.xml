@@ -451,4 +451,14 @@
       <image:title>Why You Wake Up Tired After a Full Night&#x27;s Sleep</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/daily-rhythm-body-soul-spirit.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-13</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/daily-rhythm-body-soul-spirit/hero.jpg</image:loc>
+      <image:title>A Daily Rhythm for Body, Soul, and Spirit</image:title>
+    </image:image>
+  </url>
 </urlset>
