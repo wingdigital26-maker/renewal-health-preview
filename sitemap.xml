@@ -471,4 +471,14 @@
       <image:title>Why Healing Is Not a Straight Line</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/home-atmosphere-nervous-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-14</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/home-atmosphere-nervous-system/hero.jpg</image:loc>
+      <image:title>Is Your Home Helping Your Nervous System Settle?</image:title>
+    </image:image>
+  </url>
 </urlset>
