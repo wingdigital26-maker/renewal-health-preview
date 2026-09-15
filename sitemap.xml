@@ -491,4 +491,14 @@
       <image:title>What Is Tapping, and Can It Really Settle Your Nervous System?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/survival-scripts-inherited-family-rules.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-15</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/survival-scripts-inherited-family-rules/hero.jpg</image:loc>
+      <image:title>The Invisible Rules: Survival Scripts You Never Agreed To</image:title>
+    </image:image>
+  </url>
 </urlset>
