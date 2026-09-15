@@ -481,4 +481,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-tapping-nervous-system.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-15</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-tapping-nervous-system/hero.jpg</image:loc>
+      <image:title>What Is Tapping, and Can It Really Settle Your Nervous System?</image:title>
+    </image:image>
+  </url>
 </urlset>
