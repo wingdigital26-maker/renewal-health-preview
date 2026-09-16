@@ -501,4 +501,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-you-feel-stuck-holding-pattern.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-16</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-you-feel-stuck-holding-pattern/hero.jpg</image:loc>
+      <image:title>Why You Feel Stuck in Life, and What Your Body Has to Do With It</image:title>
+    </image:image>
+  </url>
 </urlset>
