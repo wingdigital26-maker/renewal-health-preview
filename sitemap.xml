@@ -531,4 +531,14 @@
       <image:title>Generational Grief: When a Family Covers the Mirrors</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/feeling-guilty-for-resting.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-17</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/feeling-guilty-for-resting/hero.jpg</image:loc>
+      <image:title>Why You Feel Guilty for Resting, and What Helps</image:title>
+    </image:image>
+  </url>
 </urlset>
