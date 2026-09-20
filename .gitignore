@@ -1,0 +1,8 @@
+
+# 2026-09-20: these were live and publicly downloadable on the client domain.
+# Build tooling, QA artifacts and bytecode never belong on a client site.
+*.py
+*.pyc
+__pycache__/
+qa-shots/
+_edgeprof/
