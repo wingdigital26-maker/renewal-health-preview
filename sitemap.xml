@@ -571,4 +571,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/anxious-when-life-is-going-well.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-19</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/anxious-when-life-is-going-well/hero.jpg</image:loc>
+      <image:title>Why You Feel Anxious When Life Is Finally Good</image:title>
+    </image:image>
+  </url>
 </urlset>
