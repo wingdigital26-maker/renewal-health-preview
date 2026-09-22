@@ -681,4 +681,14 @@
       <image:title>Why Do I Get Sick So Often When I Am Stressed?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-dont-i-feel-like-myself-anymore.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-dont-i-feel-like-myself-anymore/hero.jpg</image:loc>
+      <image:title>Why Do I Not Feel Like Myself Anymore?</image:title>
+    </image:image>
+  </url>
 </urlset>
