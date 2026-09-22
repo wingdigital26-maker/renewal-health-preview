@@ -661,4 +661,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/is-it-normal-to-feel-worse-during-a-detox.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-22</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/is-it-normal-to-feel-worse-during-a-detox/hero.jpg</image:loc>
+      <image:title>Is It Normal to Feel Worse When You Start a Detox?</image:title>
+    </image:image>
+  </url>
 </urlset>
