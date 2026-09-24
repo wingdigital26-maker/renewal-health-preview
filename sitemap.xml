@@ -701,4 +701,14 @@
       <image:title>Can Stress Affect Your Thyroid?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-long-does-nervous-system-healing-take.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-24</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-long-does-nervous-system-healing-take/hero.jpg</image:loc>
+      <image:title>How Long Does It Take to Heal Your Nervous System?</image:title>
+    </image:image>
+  </url>
 </urlset>
