@@ -711,4 +711,14 @@
       <image:title>How Long Does It Take to Heal Your Nervous System?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-crave-sugar-when-stressed.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-24</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-crave-sugar-when-stressed/hero.jpg</image:loc>
+      <image:title>Why Do I Crave Sugar When I Am Stressed?</image:title>
+    </image:image>
+  </url>
 </urlset>
