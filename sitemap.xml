@@ -741,4 +741,14 @@
       <image:title>Journaling Prompts for Healing: Five Questions to End Your Week</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/do-affirmations-work.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-25</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/do-affirmations-work/hero.jpg</image:loc>
+      <image:title>Do Affirmations Work? Why a Declaration Is Different</image:title>
+    </image:image>
+  </url>
 </urlset>
