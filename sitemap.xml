@@ -731,4 +731,14 @@
       <image:title>How Do You Change Negative Self-Talk?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/journaling-prompts-for-healing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-25</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/journaling-prompts-for-healing/hero.jpg</image:loc>
+      <image:title>Journaling Prompts for Healing: Five Questions to End Your Week</image:title>
+    </image:image>
+  </url>
 </urlset>
