@@ -751,4 +751,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-stop-being-a-perfectionist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-26</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-stop-being-a-perfectionist/hero.jpg</image:loc>
+      <image:title>How Do You Stop Being a Perfectionist?</image:title>
+    </image:image>
+  </url>
 </urlset>
