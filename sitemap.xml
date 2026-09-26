@@ -771,4 +771,14 @@
       <image:title>A Prayer for Anxiety: Short Prayers to Settle Your Body and Soul</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-feel-emotionally-numb.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-26</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-feel-emotionally-numb/hero.jpg</image:loc>
+      <image:title>Why Do I Feel Emotionally Numb?</image:title>
+    </image:image>
+  </url>
 </urlset>
