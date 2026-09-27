@@ -801,4 +801,14 @@
       <image:title>Why Do I Shut Down During Conflict?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-build-self-confidence.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-build-self-confidence/hero.jpg</image:loc>
+      <image:title>How Do You Build Self-Confidence When You Still Feel Shaky?</image:title>
+    </image:image>
+  </url>
 </urlset>
