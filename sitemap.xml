@@ -791,4 +791,14 @@
       <image:title>How Do You Set Boundaries Without Feeling Guilty?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-shut-down-during-conflict.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-27</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-shut-down-during-conflict/hero.jpg</image:loc>
+      <image:title>Why Do I Shut Down During Conflict?</image:title>
+    </image:image>
+  </url>
 </urlset>
