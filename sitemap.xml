@@ -821,4 +821,14 @@
       <image:title>How Do You Recover From Burnout? A Gentle Way Back</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-get-out-of-survival-mode.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-28</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-get-out-of-survival-mode/hero.jpg</image:loc>
+      <image:title>How Do You Get Out of Survival Mode?</image:title>
+    </image:image>
+  </url>
 </urlset>
