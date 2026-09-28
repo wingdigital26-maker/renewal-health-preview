@@ -831,4 +831,14 @@
       <image:title>How Do You Get Out of Survival Mode?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/blessing-prayer-for-your-children.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-28</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/blessing-prayer-for-your-children/hero.jpg</image:loc>
+      <image:title>A Blessing Prayer for Your Children and Family</image:title>
+    </image:image>
+  </url>
 </urlset>
