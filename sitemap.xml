@@ -861,4 +861,14 @@
       <image:title>What Are the Signs Your Life Is Out of Alignment?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-feel-lonely-around-people.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-29</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-feel-lonely-around-people/hero.jpg</image:loc>
+      <image:title>Why Do I Feel Lonely Even When I Am Around People?</image:title>
+    </image:image>
+  </url>
 </urlset>
