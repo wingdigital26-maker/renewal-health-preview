@@ -881,4 +881,14 @@
       <image:title>What Are the Signs of Generational Trauma?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-regulate-your-emotions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-30</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-regulate-your-emotions/hero.jpg</image:loc>
+      <image:title>How Do You Regulate Your Emotions? A Body-First Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
