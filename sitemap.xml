@@ -921,4 +921,14 @@
       <image:title>Why Do I Feel Bloated After Eating?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-forgive-someone-who-hurt-you.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-01</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-forgive-someone-who-hurt-you/hero.jpg</image:loc>
+      <image:title>How Do You Forgive Someone Who Hurt You?</image:title>
+    </image:image>
+  </url>
 </urlset>
