@@ -951,4 +951,14 @@
       <image:title>How to Forgive Yourself When You Feel Stuck</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-help-your-child-calm-down.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-02</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-help-your-child-calm-down/hero.jpg</image:loc>
+      <image:title>How to Help Your Child Calm Down: Co-Regulation</image:title>
+    </image:image>
+  </url>
 </urlset>
