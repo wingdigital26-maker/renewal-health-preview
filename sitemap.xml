@@ -971,4 +971,14 @@
       <image:title>How to Support Your Body Through Perimenopause, Gently</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-high-functioning-anxiety.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-03</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-high-functioning-anxiety/hero.jpg</image:loc>
+      <image:title>What Is High-Functioning Anxiety, and Why Does It Hide So Well?</image:title>
+    </image:image>
+  </url>
 </urlset>
