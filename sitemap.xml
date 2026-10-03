@@ -981,4 +981,14 @@
       <image:title>What Is High-Functioning Anxiety, and Why Does It Hide So Well?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-feel-down-in-fall-and-winter.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-03</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-feel-down-in-fall-and-winter/hero.jpg</image:loc>
+      <image:title>Why Do I Feel Down in Fall and Winter?</image:title>
+    </image:image>
+  </url>
 </urlset>
