@@ -1001,4 +1001,14 @@
       <image:title>How Do You Cope With Holiday Stress? Gentle Ways to Stay Steady</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-stop-overthinking.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-04</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-stop-overthinking/hero.jpg</image:loc>
+      <image:title>How Do You Stop Overthinking? A Body-First Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
