@@ -1021,4 +1021,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/signs-of-an-unhealthy-gut.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/signs-of-an-unhealthy-gut/hero.jpg</image:loc>
+      <image:title>What Are the Signs of an Unhealthy Gut? Gentle Clues to Notice</image:title>
+    </image:image>
+  </url>
 </urlset>
