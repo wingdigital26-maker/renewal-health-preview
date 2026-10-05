@@ -1041,4 +1041,14 @@
       <image:title>Why Do I Get Overstimulated So Easily?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-wake-up-with-anxiety.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-05</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-wake-up-with-anxiety/hero.jpg</image:loc>
+      <image:title>Why Do I Wake Up With Anxiety Every Morning?</image:title>
+    </image:image>
+  </url>
 </urlset>
