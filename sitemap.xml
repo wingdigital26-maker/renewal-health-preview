@@ -1061,4 +1061,14 @@
       <image:title>How to Heal Your Inner Child, Gently</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-stop-comparing-yourself-to-others.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-stop-comparing-yourself-to-others/hero.jpg</image:loc>
+      <image:title>How to Stop Comparing Yourself to Others</image:title>
+    </image:image>
+  </url>
 </urlset>
