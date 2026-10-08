@@ -932,6 +932,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/why-am-i-so-mentally-exhausted.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-am-i-so-mentally-exhausted/hero.jpg</image:loc>
+      <image:title>Why Am I So Mentally Exhausted All the Time?</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/why-cant-i-fall-asleep-at-night.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1119,16 +1129,6 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/wired-but-tired/hero.jpg</image:loc>
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/why-am-i-so-mentally-exhausted.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-10-08</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/why-am-i-so-mentally-exhausted/hero.jpg</image:loc>
-      <image:title>Why Am I So Mentally Exhausted All the Time?</image:title>
     </image:image>
   </url>
 </urlset>
