@@ -1111,4 +1111,14 @@
       <image:title>How Do You Deal With Impostor Syndrome, Gently?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-am-i-so-drained-after-socializing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-am-i-so-drained-after-socializing/hero.jpg</image:loc>
+      <image:title>Why Am I So Drained After Socializing?</image:title>
+    </image:image>
+  </url>
 </urlset>
