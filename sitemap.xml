@@ -1141,4 +1141,14 @@
       <image:title>Can Stress Make You Feel Nauseous? Why Your Stomach Reacts</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-am-i-so-irritable.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-11</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-am-i-so-irritable/hero.jpg</image:loc>
+      <image:title>Why Am I So Irritable Lately? What Your Short Fuse Is Saying</image:title>
+    </image:image>
+  </url>
 </urlset>
