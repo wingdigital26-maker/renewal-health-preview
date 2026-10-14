@@ -1231,4 +1231,14 @@
       <image:title>Can Stress Affect Your Period? What Your Cycle May Be Telling You</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/does-caffeine-make-anxiety-worse.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-14</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/does-caffeine-make-anxiety-worse/hero.jpg</image:loc>
+      <image:title>Does Caffeine Make Anxiety Worse? Coffee, Cortisol, and Your Nervous System</image:title>
+    </image:image>
+  </url>
 </urlset>
