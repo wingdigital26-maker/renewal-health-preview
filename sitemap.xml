@@ -1281,4 +1281,14 @@
       <image:title>Can Stress Cause Dizziness? When Your Body Feels Unsteady</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-loss-of-appetite.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-16</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-loss-of-appetite/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Loss of Appetite? When Food Loses Its Pull</image:title>
+    </image:image>
+  </url>
 </urlset>
