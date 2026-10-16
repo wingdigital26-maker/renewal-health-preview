@@ -1152,6 +1152,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-get-anxious-on-sunday-nights.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-10-16</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-get-anxious-on-sunday-nights/hero.jpg</image:loc>
+      <image:title>Why Do I Get Anxious on Sunday Nights? The Sunday Scaries</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/why-do-i-get-overstimulated-so-easily.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1289,16 +1299,6 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/wired-but-tired/hero.jpg</image:loc>
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/why-do-i-get-anxious-on-sunday-nights.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-10-16</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-get-anxious-on-sunday-nights/hero.jpg</image:loc>
-      <image:title>Why Do I Get Anxious on Sunday Nights? The Sunday Scaries</image:title>
     </image:image>
   </url>
 </urlset>
