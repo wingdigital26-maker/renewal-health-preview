@@ -992,6 +992,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/what-does-the-bible-say-about-rest.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-10-17</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-does-the-bible-say-about-rest/hero.jpg</image:loc>
+      <image:title>What Does the Bible Say About Rest? Your Body Agrees</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/what-is-high-functioning-anxiety.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1319,16 +1329,6 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/wired-but-tired/hero.jpg</image:loc>
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/what-does-the-bible-say-about-rest.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-10-17</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/what-does-the-bible-say-about-rest/hero.jpg</image:loc>
-      <image:title>What Does the Bible Say About Rest? Your Body Agrees</image:title>
     </image:image>
   </url>
 </urlset>
