@@ -402,6 +402,16 @@
     </image:image>
   </url>
   <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-night-sweats.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <lastmod>2026-10-19</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-night-sweats/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Night Sweats? What Your Body Does While You Sleep</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://renewalhealth.life/blog/can-stress-cause-tinnitus.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1379,16 +1389,6 @@
     <image:image>
       <image:loc>https://renewalhealth.life/assets/blog/wired-but-tired/hero.jpg</image:loc>
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://renewalhealth.life/blog/can-stress-cause-night-sweats.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-10-19</lastmod>
-    <image:image>
-      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-night-sweats/hero.jpg</image:loc>
-      <image:title>Can Stress Cause Night Sweats? What Your Body Does While You Sleep</image:title>
     </image:image>
   </url>
 </urlset>
