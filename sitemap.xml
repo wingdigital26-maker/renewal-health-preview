@@ -1431,4 +1431,14 @@
       <image:title>Can Stress Cause Shortness of Breath? What Your Breath Says</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-dry-mouth.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-dry-mouth/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Dry Mouth? Why Anxiety Leaves Your Mouth Parched</image:title>
+    </image:image>
+  </url>
 </urlset>
