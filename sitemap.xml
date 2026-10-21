@@ -1421,4 +1421,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-shortness-of-breath.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-21</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-shortness-of-breath/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Shortness of Breath? What Your Breath Says</image:title>
+    </image:image>
+  </url>
 </urlset>
