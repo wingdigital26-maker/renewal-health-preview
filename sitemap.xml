@@ -1451,4 +1451,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-blurry-vision.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-22</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-blurry-vision/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Blurry Vision? What Your Eyes Do Under Pressure</image:title>
+    </image:image>
+  </url>
 </urlset>
