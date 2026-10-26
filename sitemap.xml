@@ -1511,4 +1511,14 @@
       <image:title>What Is Masking, and Why Is It So Exhausting?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-do-i-feel-so-jealous-of-other-peoples-lives.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-do-i-feel-so-jealous-of-other-peoples-lives/hero.jpg</image:loc>
+      <image:title>Why Do I Feel So Jealous of Other People&#x27;s Lives?</image:title>
+    </image:image>
+  </url>
 </urlset>
