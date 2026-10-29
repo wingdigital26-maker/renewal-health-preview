@@ -1571,4 +1571,14 @@
       <image:title>Why Do I Feel Like a Burden? What Your Body Learned About Needing People</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/why-cant-i-relax-on-vacation.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-28</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/why-cant-i-relax-on-vacation/hero.jpg</image:loc>
+      <image:title>Why Can&#x27;t I Relax on Vacation? When Your Body Will Not Clock Out</image:title>
+    </image:image>
+  </url>
 </urlset>
