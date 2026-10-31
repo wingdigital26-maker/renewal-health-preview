@@ -1661,4 +1661,14 @@
       <image:title>Can Stress Make You Sweat More? Why It Happens</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-stop-people-pleasing.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-10-31</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-stop-people-pleasing/hero.jpg</image:loc>
+      <image:title>How to Stop People Pleasing Without Losing Kindness</image:title>
+    </image:image>
+  </url>
 </urlset>
