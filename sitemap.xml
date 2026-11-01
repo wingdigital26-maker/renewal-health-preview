@@ -1691,4 +1691,14 @@
       <image:title>How to Let Go of the Past When It Still Feels So Close</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-trust-again-after-being-hurt.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-01</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-trust-again-after-being-hurt/hero.jpg</image:loc>
+      <image:title>How to Trust Again After Being Hurt</image:title>
+    </image:image>
+  </url>
 </urlset>
