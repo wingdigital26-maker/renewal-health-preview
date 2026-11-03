@@ -1731,4 +1731,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-does-a-naturopath-do.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-03</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-does-a-naturopath-do/hero.jpg</image:loc>
+      <image:title>What Does a Naturopath Do? A Plain-English Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
