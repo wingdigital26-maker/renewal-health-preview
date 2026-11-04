@@ -1771,4 +1771,14 @@
       <image:title>How to Lower Cortisol Naturally: A Gentle Guide</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-improve-gut-health-naturally.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-04</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-improve-gut-health-naturally/hero.jpg</image:loc>
+      <image:title>How to Improve Gut Health Naturally: Where to Start</image:title>
+    </image:image>
+  </url>
 </urlset>
