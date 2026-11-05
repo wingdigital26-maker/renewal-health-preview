@@ -1811,4 +1811,14 @@
       <image:title>Naturopath vs Homeopath: What Is the Difference?</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/signs-of-inflammation-in-the-body.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-05</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/signs-of-inflammation-in-the-body/hero.jpg</image:loc>
+      <image:title>Signs of Inflammation in the Body: What to Notice</image:title>
+    </image:image>
+  </url>
 </urlset>
