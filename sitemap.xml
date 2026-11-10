@@ -1871,4 +1871,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-toxic-positivity.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-toxic-positivity/hero.jpg</image:loc>
+      <image:title>What Is Toxic Positivity, and Why Does It Feel Unsafe?</image:title>
+    </image:image>
+  </url>
 </urlset>
