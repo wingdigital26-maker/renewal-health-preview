@@ -1851,4 +1851,14 @@
       <image:title>What Is Holistic Health? A Plain-English Guide</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-affect-your-libido.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-10</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-affect-your-libido/hero.jpg</image:loc>
+      <image:title>Can Stress Affect Your Libido? What Your Body Is Doing</image:title>
+    </image:image>
+  </url>
 </urlset>
