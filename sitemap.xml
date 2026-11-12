@@ -1901,4 +1901,14 @@
       <image:title>Can Stress Cause Food Sensitivities? A Gut on Guard</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-weight-loss.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-12</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-weight-loss/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Weight Loss? When Refueling Stops</image:title>
+    </image:image>
+  </url>
 </urlset>
