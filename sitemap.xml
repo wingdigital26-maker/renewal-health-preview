@@ -1961,4 +1961,14 @@
       <image:title>Can Stress Cause High Cholesterol? What Your Heart Hears</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/how-to-practice-self-compassion.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-14</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/how-to-practice-self-compassion/hero.jpg</image:loc>
+      <image:title>How to Practice Self-Compassion When You Are Hard on Yourself</image:title>
+    </image:image>
+  </url>
 </urlset>
