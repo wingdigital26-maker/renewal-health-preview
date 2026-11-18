@@ -2081,4 +2081,14 @@
       <image:title>Can Stress Cause Itchy Skin? When You Itch but See No Rash</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/signs-of-caregiver-burnout.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/signs-of-caregiver-burnout/hero.jpg</image:loc>
+      <image:title>Signs of Caregiver Burnout: When Caring for Others Empties You</image:title>
+    </image:image>
+  </url>
 </urlset>
