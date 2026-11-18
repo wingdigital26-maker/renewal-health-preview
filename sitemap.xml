@@ -2061,4 +2061,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/can-stress-cause-hot-flashes.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/can-stress-cause-hot-flashes/hero.jpg</image:loc>
+      <image:title>Can Stress Cause Hot Flashes? Why the Heat Rises When Life Does</image:title>
+    </image:image>
+  </url>
 </urlset>
