@@ -2111,4 +2111,14 @@
       <image:title>What Is a Highly Sensitive Person? Signs and Support</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-executive-dysfunction.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-19</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-executive-dysfunction/hero.jpg</image:loc>
+      <image:title>What Is Executive Dysfunction? Why Starting Feels So Hard</image:title>
+    </image:image>
+  </url>
 </urlset>
