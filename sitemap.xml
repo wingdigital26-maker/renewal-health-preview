@@ -2101,4 +2101,14 @@
       <image:title>Can Stress Cause Shingles? What Your Body Is Telling You</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-a-highly-sensitive-person.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-19</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-a-highly-sensitive-person/hero.jpg</image:loc>
+      <image:title>What Is a Highly Sensitive Person? Signs and Support</image:title>
+    </image:image>
+  </url>
 </urlset>
