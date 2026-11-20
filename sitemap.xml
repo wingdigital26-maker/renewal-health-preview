@@ -2141,4 +2141,14 @@
       <image:title>What Is Insulin Resistance? A Gentle, Plain-English Guide</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-stimming.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-stimming/hero.jpg</image:loc>
+      <image:title>What Is Stimming? Why Your Body Seeks Rhythm to Feel Safe</image:title>
+    </image:image>
+  </url>
 </urlset>
