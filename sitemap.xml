@@ -2131,4 +2131,14 @@
       <image:title>What Is Leaky Gut? A Plain-English, Honest Guide</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-insulin-resistance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-insulin-resistance/hero.jpg</image:loc>
+      <image:title>What Is Insulin Resistance? A Gentle, Plain-English Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
