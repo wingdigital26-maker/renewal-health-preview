@@ -2121,4 +2121,14 @@
       <image:title>Wired but Tired: When Your Body Is Stuck in a Quiet Emergency</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-leaky-gut.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-20</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-leaky-gut/hero.jpg</image:loc>
+      <image:title>What Is Leaky Gut? A Plain-English, Honest Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
