@@ -2171,4 +2171,14 @@
       <image:title>What Is Circadian Rhythm? Your Body&#x27;s Daily Clock</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-interoception.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-22</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-interoception/hero.jpg</image:loc>
+      <image:title>What Is Interoception? Your Body&#x27;s Inner Sense</image:title>
+    </image:image>
+  </url>
 </urlset>
