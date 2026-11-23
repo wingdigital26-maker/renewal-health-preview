@@ -2201,4 +2201,14 @@
       <image:title>What Is the Vagus Nerve? Your Body&#x27;s Calming Pathway</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/prebiotics-vs-probiotics.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-23</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/prebiotics-vs-probiotics/hero.jpg</image:loc>
+      <image:title>Prebiotics vs Probiotics: What Is the Difference?</image:title>
+    </image:image>
+  </url>
 </urlset>
