@@ -2231,4 +2231,14 @@
       <image:title>What Is Neuroplasticity? How Your Brain Learns and Adapts</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-alexithymia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-24</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-alexithymia/hero.jpg</image:loc>
+      <image:title>What Is Alexithymia? When You Cannot Name What You Feel</image:title>
+    </image:image>
+  </url>
 </urlset>
