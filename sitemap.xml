@@ -2251,4 +2251,14 @@
       <image:title>What Is Bile? The Quiet Fluid That Helps Your Body Let Go</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-oxidative-stress.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-27</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-oxidative-stress/hero.jpg</image:loc>
+      <image:title>What Is Oxidative Stress? A Plain-English Guide</image:title>
+    </image:image>
+  </url>
 </urlset>
