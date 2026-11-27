@@ -2261,4 +2261,14 @@
       <image:title>What Is Oxidative Stress? A Plain-English Guide</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://renewalhealth.life/blog/what-is-body-doubling.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-11-27</lastmod>
+    <image:image>
+      <image:loc>https://renewalhealth.life/assets/blog/what-is-body-doubling/hero.jpg</image:loc>
+      <image:title>What Is Body Doubling? Why Company Helps You Get Things Done</image:title>
+    </image:image>
+  </url>
 </urlset>
